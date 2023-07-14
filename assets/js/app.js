@@ -1098,7 +1098,7 @@ function loading() {
   }
 }
 
-const version = "1689308935";
+const version = "1689368731";
 console.log('URL: ' + window.location.pathname)
 
 window.addEventListener("DOMContentLoaded", () => {
@@ -1117,17 +1117,14 @@ window.addEventListener("DOMContentLoaded", () => {
       window.location.href = '/preload.html';
     }
   } else {
-    if (!(currentPath === '' ||
-    currentPath === '/index.html' ||
-    currentPath === 'index.html' ||
-    currentPath === '/index' ||
-    currentPath === '/' ||
-    currentPath === 'jackboxbalticu.pages.dev/' ||
-    currentPath === 'jackboxbalticu.pages.dev/index' ||
-    currentPath === 'jackboxbalticu.pages.dev/index.html' ||
-    currentPath === '127.0.0.1:5500/' ||
-    currentPath === '127.0.0.1:5500/index' ||
-    currentPath === '127.0.0.1:5500/index.html')) {
+    if ((currentPath === 'preload' ||
+    currentPath === '/preload.html' ||
+    currentPath === 'preload.html' ||
+    currentPath === '/preload' ||
+    currentPath === 'jackboxbalticu.pages.dev/preload' ||
+    currentPath === 'jackboxbalticu.pages.dev/preload.html' ||
+    currentPath === '127.0.0.1:5500/preload' ||
+    currentPath === '127.0.0.1:5500/preload.html')) {
       window.location.href = '/index.html';
     }
   }
