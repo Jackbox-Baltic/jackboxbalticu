@@ -1,0 +1,140 @@
+:root {
+    --h0fs: 64px;
+    --aihfs: 18px;
+    --aibcfs: 16px;
+}
+
+.main {
+    padding: 0;
+    background: var(--re);
+    width: 100%;
+    margin-top: -17px;
+    border-radius: 20px;
+    box-shadow: inset 0 10px 10px -16px var(--boxshadow);
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
+    padding-bottom: 36px;
+}
+
+h1 {
+    color: var(--abtn);
+    padding: 0.2vh 1vh 0.2vh 1vh;
+    cursor: default;
+    text-align: left;
+    font-size: 7vh;
+    font-weight: 700;
+    padding-top: 160px;
+    padding-bottom: 80px;
+}
+
+.game_background {
+    max-height: 560px;
+    padding-bottom: 40px;
+    background-image: var(--gamebackground);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+    padding: 2vh;
+}
+
+.game_background img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.accordion {
+    width: 90%;
+    max-width: 1000px;
+    margin: 2rem auto;
+}
+
+.accordion-item {
+    background-color: var(--wvsbbg);
+    margin: 1rem 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
+}
+
+.accordion-item-header {
+    padding: 0.5rem 3rem 0.5rem 1rem;
+    min-height: 3.5rem;
+    line-height: 1.25rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    font-size: var(--aihfs);
+    background-color: var(--hbgbs);
+    color: var(--crlia);
+}
+
+.accordion-item-header::after {
+    content: "\002B";
+    font-size: 2rem;
+    position: absolute;
+    right: 1rem;
+}
+  
+.accordion-item-header.active::after {
+    content: "\2212";
+}
+
+.accordion-item-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.accordion-item-body-content {
+    padding: 1rem;
+    border-top: 1px solid;
+    border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+    font-size: var(--aibcfs);
+}
+
+.accordion-item-body-content a {
+    color: var(--bal);
+}
+
+.accordion-item-body-content a:hover {
+    color: var(--balh);
+    -webkit-text-shadow: 4px 4px 4px var(--bal);
+    -moz-text-shadow: 4px 4px 4px var(--bal);
+        text-shadow: 0px 0px 2px var(--bal);
+}
+
+.accordion-item-body-content p{
+    font-size: var(--aibcfs);
+}
+
+.accordion-item-body-content ul {
+    padding-left: 1rem;
+}
+
+strong {
+    font-weight: 700;
+}
+
+@media screen and (max-width: 537px) {
+    :root {
+        --h0fs: 36px;
+        --aihfs: 14px;
+        --aibcfs: 12px;
+    }
+}

@@ -1,0 +1,78 @@
+#dev {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: var(--w1b);
+    margin-top: -17px;
+    border-radius: 20px;
+    padding-top: 36px;
+}
+
+#devin {
+    width: 90%;
+}
+
+#games2 .pipib {
+    color: var(--crlia);
+}
+
+.nongames {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.nongames .b {
+    background-color: var(--bd2);
+}
+
+#games2 {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+h1 {
+    color: var(--abtn);
+    padding: 0.2vh 1vh 0.2vh 1vh;
+    cursor: default;
+    text-align: left;
+    font-size: 7vh;
+    font-weight: 700;
+    padding-top: 160px;
+    padding-bottom: 80px;
+}
+
+.game_background {
+    max-height: 560px;
+    padding-bottom: 40px;
+    background-image: var(--gamebackground);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+    padding: 2vh;
+}
+
+.game_background img {
+    padding-left: var(--plimg);
+    padding-right: var(--plimg);
+    width: 100%;
+    margin: 0 auto;
+}

@@ -1,0 +1,330 @@
+:root{
+    --plimg: 30%;
+    --bulb: 40%;
+    --h3fs: 144px;
+    --h2fs: 48px;
+    --pfs: 48px;
+    --stpfs: 24px;
+    --button: #000;
+    --i: rgba(0, 0, 0, 0.3);
+    --ci: rgb(0, 0, 0);
+    --h3fs: 144px;
+    --pfs: 48px;
+    --textPrimary: #333333;
+    --inputPrimary: #e0e0e0;
+    --bgrecent: #e0e0e0;
+}
+
+:root[data-theme='dark']{
+    --button: #fff;
+    --i: rgba(255, 255, 255, 0.3);
+    --ci: rgb(255, 255, 255);
+    --textPrimary: #e0e0e0;
+    --inputPrimary: #1f2937;
+    --bgrecent: #0d1c2b;
+}
+
+.bulb {
+    width: var(--bulb);
+}
+
+.ltrc2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 8vh;
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    background-color: var(--hbgbs);
+}
+
+.ltrc3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding: 2vh;
+    align-content: center;
+}
+
+.ltrc3 div {
+   margin-top: -128px;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: nowrap;
+   align-content: center;
+   justify-content: center;
+   align-items: center;
+}
+
+.ltrc2 h1 {
+    font-size: var(--h3fs);
+    color: var(--crlia);
+    line-height: 1;
+}
+
+.ltrc2 p {
+    font-size: var(--pfs);
+    color: var(--crlia);
+}
+
+.whi {
+    padding: 30px 15px;
+    background: var(--bgrecent);
+    margin-top: -70px;
+    padding-bottom: 50px;
+    position: absolute;
+    border-radius: 20px;
+}
+
+p {
+    font-size: var(--stpfs);
+    color: var(--textPrimary);
+    font-weight: 600;
+}
+
+.splittblock {
+    display: flex;
+    padding: 16px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    width: 90%;
+    align-items: flex-start;
+}
+
+h2 {
+    display: block;
+    line-height: 1;
+    font-weight: bold;
+    font-size: var(--h2fs);
+    color: var(--inputPrimary);
+    background-color: var(--textPrimary);
+    padding: 16px;
+}
+
+.p2 {
+    padding: 0px 32px 16px 16px;
+    width: 50%;
+}
+
+.p3 {
+    padding-top: 10px;
+}
+
+a.ast {
+    color: var(--button);
+}
+
+a.ast:hover, a.ast:visited {
+    color: var(--button);
+}
+
+.carousel {
+    position: relative;
+    width: 50%;
+    aspect-ratio: 16 / 9;
+    margin: 0 auto;
+}
+
+.carousel-image {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+.carousel-track-container {
+    background: #4254f4;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-track, .carousel-track2 {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    height: 100%;
+    transition: transform 250ms ease-in;
+}
+
+.carousel-slide, .carousel-slide2 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.carousel-button-left {
+    left: -40px;
+}
+
+.carousel-button-right {
+    right: -40px;
+}
+
+svg {
+    max-width: 50%;
+    display: block;
+}
+
+.carousel-button svg {
+    width: 24px;
+    fill: var(--button);
+}
+
+.carousel-nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.carousel-indicator {
+    border: 0;
+    border-radius: 50%;
+    width: 6px;
+    height: 6px;
+    background: var(--i);
+    margin: 0 12px;
+    cursor: pointer;
+}
+
+.carousel-indicator.current-slide {
+    background: var(--ci);
+}
+
+.is-hidden {
+    display: none;
+}
+
+.game_background {
+    padding: 30px 22px;
+    padding-bottom: 40px;
+    background-color: var(--bgtheme);;
+    box-shadow: inset 0 10px 10px -16px var(--boxshadow);
+}
+
+.game_background img {
+    width: 50%;
+    margin: 0 auto;
+    user-select: none;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10+ */
+    padding-right: 10%;
+    position: relative;
+}
+
+.head {
+    flex-basis: 80%;
+    padding: 16px;
+}
+
+h1[data-v-2ba6adc4] {
+    padding-top: 10%;
+    display: block;
+    line-height: 1;
+    font-weight: bold;
+    font-size: var(--h3fs);
+    color: #fff;
+}
+
+p[data-v-2ba6adc4] {
+    padding-top: 1%;
+    font-size: var(--pfs);
+    color: #fff;
+}
+
+.splitter {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 1375px) {
+    :root{
+        --h3fs: 122px;
+        --h2fs: 42px;
+        --pfs: 28px;
+        --stpfs: 20px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    :root{
+        --h2fs: 36px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    :root{
+        --h2fs: 32px;
+        --stpfs: 18px;
+    }
+}
+@media screen and (max-width: 1060px) {
+    :root{
+        --h3fs: 96px;
+        --pfs: 22px;
+    }
+}
+@media screen and (max-width: 1030px) {
+    :root{
+        --h2fs: 42px;
+        --stpfs: 24px;
+    }
+    .splittblock {
+        flex-direction: column;
+        align-items: center;
+    }
+    .carousel {
+        width: 80%;
+    }
+    .p2 {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 900px) {
+    :root{
+        --h3fs: 96px;
+        --h2fs: 36px;
+        --stpfs: 22px;
+    }
+    .ltrc3 div {
+        margin-top: 0px;
+        padding-top: 64px;
+        padding-bottom: 156px;
+    }
+    .bulb {
+        display: none;
+    }
+}
+@media screen and (max-width: 560px) {
+    :root{
+        --h3fs: 84px;
+        --stpfs: 18px;
+        --h2fs: 32px;
+        --stpfs: 16px;
+    }
+}

@@ -1,0 +1,136 @@
+.jbg.modal {
+    background: rgba(14,22,125,.85);
+}
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.85);
+    z-index: 1000;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal.active {
+    opacity: 1; 
+    pointer-events: all;
+}
+
+.modal-transition-leave {
+    transition: opacity .15s;
+}
+
+.jbg {
+    background: #fff;
+    font-family: "Open Sans",Arial,sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.jbg.contentt {
+    text-align: center;
+}
+.jbg .contentt {
+    box-shadow: 0 8px 0 0 #0e167d;
+}
+.jbg {
+    background: #fff;
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    color: #333;
+}
+.contentt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: calc(100% - 60px);
+    max-width: 350px;
+    padding: 25px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 8px 0 0 #333;
+    transform: translate(-50%, -50%) scale(0);
+}
+
+.contentt.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.jbg.contentt .bubz {
+    width: auto;
+    height: 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.jbg.contentt .text {
+    margin-top: 15px;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+.jbg.contentt .subtext {
+    margin-top: 5px;
+    padding: 0 20px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.2;
+}
+
+.jbg.contentt .actions {
+    margin-top: 10px;
+}
+
+.jbg.contentt button {
+    width: 100%;
+    margin: 10px 0 0;
+}
+.jbg button {
+    cursor: pointer;
+    height: 48px;
+    width: calc(100% - 50px);
+    margin: 10px 25px 15px;
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #4254f4;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 0 5px 0 0 #0e167d;
+    transition: color .5s,background-position .5s,box-shadow .5s;
+}
+
+:root {
+    --accent: #4254F4;
+    --textButton: #f5f7f7;
+    --shadows: rgba(128, 128, 128, .4);
+}
+
+button {
+    cursor: pointer;
+    height: 48px;
+    letter-spacing: normal;
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #4254F4;
+    color: #f5f7f7;
+    line-height: 1.5;
+    text-transform: uppercase;
+    box-shadow: 0 5px 0 0 rgba(128, 128, 128, .4);
+    transition: color .5s,background-position .5s,box-shadow .5s;
+}
+
+/*  {
+    -webkit-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+}
