@@ -173,37 +173,35 @@ tct.forEach(function(tct) {
 
 // LANGUAGE
 
-
-
-const tjpstest = [{
-  title: "You Don't Know Jack 2015",
-  status: "Not translated",
-  image: "ydkj2015",
-  description: "The smart-ass trivia show that started it all! Hundreds of all-new twisted trivia questions and everyone’s favorite host!"
+const tjpp3lv = [{
+  title: "Smiekcirte 2",
+  status: "Nav tulkots",
+  image: "Quiplash2Game",
+  description: "\"Saki jebko\" turpinājums. Spēlējiet visus jaunus jautājumus vai izveidojiet savus!"
 },
 {
-  title: "Drawful",
-  status: "Not translated",
-  image: "drawful",
-  description: "The first installment of the wildly popular drawing game allows you to draw bizarre doodles on your phone or tablet."
+  title: "Viktorīna nāvējošā ballītē",
+  status: "Nav tulkots",
+  image: "TriviaDeathResults",
+  description: "Nāvējošs viktorīnas šovs, kurā jūs sacenšaties asprātībā pret nieka apsēstu slepkavu."
 },
 {
-  title: "Word Spud",
-  status: "Not translated",
-  image: "wordspud",
-  description: "Test your vocabulary chops in the racy-as-you-want-it-to-be fill-in-the-blank word game."
+  title: "Minspiegošana",
+  status: "Nav tulkots",
+  image: "Guess",
+  description: "Minēšanas spēle, kurā jums ir jāuzzina rezultāti, kas iegūti, analizējot datus par citiem cilvēkiem."
 },
 {
-  title: "Lie Swatter",
-  status: "Not translated",
-  image: "lieswatter",
-  description: "Need a game for a big group? Grab yourself or a crowd and play true-or-false with a timer."
+  title: "Tēlo lomu",
+  status: "Nav tulkots",
+  image: "FakinIt",
+  description: "Vienam no taviem draugiem ir kaut kas slēpjams šajā viltīgajā spēlē, kas paredzēta viltniekiem."
 },
 {
-  title: "Fibbage XL",
-  status: "Not translated",
-  image: "fibbagexl",
-  description: "The hilarious bluffing game now has 50% more questions added to the original hit game, Fibbage."
+  title: "Kre K.O.",
+  status: "Tulkots",
+  image: "TeeKOGame",
+  description: "T-kreklu kautiņš, kurā tu cīnies ar saviem pielāgotajiem t-krekliem līdz nāvei!"
 }
 ];
 
@@ -263,17 +261,16 @@ const gamesDatalv = [/*{
   new: "",
   view: "",
   cp: "open-popup",
-},
+},*/
 {
-  href: "",
+  href: "href=\"tjpp3.html\"",
   image: "tjpp3",
   name: "The Jackbox Party Pack 3",
   span: "",
-  date: "",
+  date: "LV",
   new: "",
   view: "",
-  cp: "open-popup",
-},
+},/*
 {
   href: "",
   image: "tjpp4",
@@ -401,7 +398,7 @@ const newgamesDatalt = [{}];
 function newgames(text) {
 return `
 <div class="past-game home ${text.cp}">
-  <a ${text.href} target="_blank" class="card">
+  <a ${text.href} class="card">
     <div class="image fallback ${text.image}"></div>
     ${text.view}
     <div class="content">
@@ -540,6 +537,7 @@ en: {
 
     tjpsd: "Jackbox Party Starter is an indispensable party game! This pack contains three updated games: Quiplash 3, Tee K.O. and Trivia Murder Party 2.",
     tjppstext: "Our translation is released for Windows OS based version of Steam (+ Humble/Fanatical). Other platforms (Epic Games) have not been tested.<br>On this page you can get a modification that adds a language to the game. Please note that not all games are translated and there may be errors or inaccuracies. However you can help us by entering the Discord Server. <br>To download the translation you need to have the game on Steam. We do not support piracy and will not help!",
+    tjpp3d: "The threequel to the party game phenomenon features the deadly quiz show Trivia Murder Party, the say-anything sequel Quiplash 2, the surprising survey game Guesspionage, the t-shirt slugfest Tee K.O., and the sneaky trickster game Fakin’ It.",
   },
 ee: {
   lang: 'Eesti',
@@ -668,7 +666,7 @@ lv: {
     contd: "Ja tev ir kāds jautājums, ieteikums vai vienkārši vēlies aprunāties, vislabāk sazinies, izmantojot:",
     ds: "DISCORD SERVERIS",
     from: "no",
-    rtg: "Nesen tulkota(ās) spēle(s)",
+    rtg: "Nesen tulkotās spēles",
     discorddi: "Šajā vietne, kurā mēs augšupielādējam neoficiālus tulkojumus igauņu, latviešu un lietuviešu valodās Jackbox Games spēlēm (kas ir pazīstami kā Jackbox Party Pack radītāji). Mēs tikai sākam savu ceļu spēļu lokalizācijā, tāpēc tu vari mums palīdzēt, pievienojoties mūsu komandai Discord serverī!",
 
     howtoplay: "KĀ SPĒLĒT?",
@@ -702,6 +700,7 @@ lv: {
 
     tjpsd: "Tagad ir pieejams Jackbox Party Starter, lai palīdzētu sākt ballīti! Jackbox Games apkopojuši trīs atjauninātas spēles: Quiplash 3, Tee K.O. un Trivia Murder Party 2. Tā kā ir tik daudz spēļu, no kurām izvēlēties, izstrādatāji nolēma palīdzēt atbrīvoties no dažiem minējumiem un iedot jums trīs spēles, kas noteikti sagādās jums izklaides stundas!",
     tjppstext: "Mūsu tulkojums ir izlaists Windows OS balstīta Steam (+ Humble/Fanatical). Citas platformas (Epic Games) nav pārbaudītas.<br>Šajā lapā jūs varat iegūt modifikāciju, kas pievieno spēli kādā valodā. Lūdzu, ņemiet vērā, ka ne visas spēles ir tulkotas un tajās var būt kļūdas vai neprecizitātes. Tomēr jūs varat mums palīdzēt, ieejot discord serverī.<br>Lai lejupielādētu tulkojumu, spēlei jābūt instalētai pakalpojumā Steam. Mēs neatbalstām pirātismu un nepalīdzēsim.",
+    tjpp3d: "Ballīšu spēļu triešais fenomens turpinājumā ir nāvējošais viktorīnas šovs Trivia Murder Party, \"saki jebko\" turpinājums Quiplash 2, pārsteidzošā aptauju spēle Guesspionage, t-kreklu kautiņu spēle Tee K.O. un viltīgā viltnieku spēle Fakin' It.",
   },
 lt: {
   lang: 'Lietuvių',
@@ -778,6 +777,11 @@ function setLang(lang) {
     if(document.getElementById("tjpsg")){
       document.getElementById("tjpsg").innerHTML = `
         ${tjpslv.map((game) => tjpsg(game)).join("")}
+      `;
+    }
+    if(document.getElementById("tjpp3g")){
+      document.getElementById("tjpp3g").innerHTML = `
+        ${tjpp3lv.map((game) => tjpsg(game)).join("")}
       `;
     }
     const carousel = document.querySelector(".carousel");
@@ -1101,16 +1105,17 @@ function loading() {
   }
 }
 
+const version = "1689307296";
 console.log('URL: ' + window.location.pathname)
 
 window.addEventListener("DOMContentLoaded", () => {
   if(sv){
     function siteversion() {
         sv.innerHTML = version;
-        console.log("Version: " + version);
     }
     siteversion()
   }
+  console.log("Version: " + version);
   function checkScreenWidth() {
     if (window.innerWidth <= 320) {
       if(qwelcome) {

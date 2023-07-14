@@ -29,6 +29,7 @@
   background-image: url("https://jackboxgames.b-cdn.net/wp-content/uploads/2022/08/pp9temptile.jpg");
 }
 
+/* TJPP */
 .image.ydkj2015 {
   background-image: url(https://jackboxgames.b-cdn.net/wp-content/uploads/2019/06/YDKJ2015tile.jpg);
 }
@@ -51,6 +52,8 @@
 .image.DrawfulGame {
   background-image: url(https://bundles.jackbox.tv/main/@connect/assets/541db9ba.jpg);
 }
+
+/* TJPP3 */
 .image.TeeKOGame {
   background-image: url(https://bundles.jackbox.tv/main/@connect/assets/3bae2cc0.jpg);
 }
@@ -60,6 +63,14 @@
 .image.TriviaDeathResults {
   background-image: url(https://bundles.jackbox.tv/main/@connect/assets/9911eb72.jpg);
 }
+.image.FakinIt {
+  background-image: url(https://jackboxgames.b-cdn.net/wp-content/uploads/2019/06/PP3Tile_FakinIt.jpg);
+}
+.image.Guess {
+  background-image: url(https://jackboxgames.b-cdn.net/wp-content/uploads/2019/06/PP3Tile_Guess.jpg);
+}
+
+/* TJPP4 */
 .image.STIGame {
   background-image: url(https://bundles.jackbox.tv/main/@connect/assets/1987581d.png);
 }
@@ -72,6 +83,8 @@
 .image.OverdrawnGame {
   background-image: url(https://bundles.jackbox.tv/main/@connect/assets/322c82ae.png);
 }
+
+/* TJPP5 */
 .image.YDKJ2018Game {
   background-image: url(https://bundles.jackbox.tv/main/@connect/assets/44cd0ac2.png);
 }
@@ -87,6 +100,8 @@
 .image.PatentlyStupidGame {
   background-image: url(https://bundles.jackbox.tv/main/@connect/assets/78533ea7.png);
 }
+
+/* TJPP6 */
 .image.TriviaDeath2Game {
   background-image: url(https://bundles.jackbox.tv/main/@connect/assets/c89229f2.png);
 }
@@ -102,6 +117,8 @@
 .image.PushTheButtonGame {
   background-image: url(https://bundles.jackbox.tv/main/@connect/assets/16682b82.png);
 }
+
+/* TJPP7 */
 .image.JackboxTalksGame {
   background-image: url(https://bundles.jackbox.tv/main/@connect/assets/198566d8.png);
 }
@@ -117,6 +134,8 @@
 .image.BlankyBlankGame {
   background-image: url(https://bundles.jackbox.tv/main/@connect/assets/028cb815.jpg);
 }
+
+/* TJPP8 */
 .image.DrawfulAnimateGame {
   background-image: url(https://bundles.jackbox.tv/main/@connect/assets/9d886310.png);
 }
@@ -132,6 +151,8 @@
 .image.MurderDetectivesGame {
   background-image: url(https://bundles.jackbox.tv/main/@connect/assets/a2a7a291.png);
 }
+
+/* TJPP9 */
 .image.AntiqueGameGame {
   background-image: url(https://bundles.jackbox.tv/main/@connect/assets/116c49cb.png);
 }

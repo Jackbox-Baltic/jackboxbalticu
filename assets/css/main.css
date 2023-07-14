@@ -145,7 +145,7 @@ a:visited {
 /* WEBKIT SCROLLBAR */
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 1vh;
 }
 
 /* Track */
@@ -184,8 +184,8 @@ header {
 }
 
 a.l {
-    width: 35px;
-    height: 35px;
+    width: 3.8vh;
+    height: 3.8vh;
     content: "";
     background-image: url("../images/logo.png");
     background-size: contain;
@@ -288,8 +288,8 @@ a .tooltiptext {
     text-align: center;
     font-weight: 400;
     font-size: 2vh;
-    border-radius: 6px;
-    padding: 5px 5px;
+    border-radius: 0.65vh;
+    padding: 0.5vh 0.5vh;
     position: absolute;
     z-index: 1;
     top: 100%;
@@ -321,9 +321,9 @@ a:hover .tooltiptext {
 }
 
 header a:hover {
-    -webkit-text-shadow: 4px 4px 4px var(--boxshadow);
-    -moz-text-shadow: 4px 4px 4px var(--boxshadow);
-        text-shadow: 0px 0px 5px var(--boxshadow);
+    -webkit-text-shadow: 0.4vh 0.4vh 0.4vh var(--boxshadow);
+    -moz-text-shadow: 0.4vh 0.4vh 0.4vh var(--boxshadow);
+        text-shadow: 0px 0px 0.5vh var(--boxshadow);
     font-weight: 700;
 }
 

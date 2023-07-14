@@ -175,7 +175,7 @@ section {
 }
 
 #reg .b {
-    width: 250px;
+    width: fit-content;
 }
 
 .l {
@@ -260,8 +260,8 @@ section {
     justify-content: center;
     align-items: center;
 
-    padding-top: 8vh;
-    padding-bottom: 17px;
+    padding-top: 9vh;
+    padding-bottom: 2vh;
     width: 80%;
 }
 
@@ -327,9 +327,6 @@ section {
     }
     h1 {
         font-size: 4vh;
-    }
-    #reg .b {
-        width: 220px;
     }
 }
 @media screen and (max-width: 990px) {
@@ -413,8 +410,6 @@ section {
     .game_background h1 {
         font-size: 3.8vh;
     }
-}
-@media screen and (max-width: 590px) {
     #pipi,
     .nongames p {
         font-size: 1.8vh;
@@ -424,6 +419,9 @@ section {
     }
 }
 @media screen and (max-width: 470px) {
+    header ul {
+        flex-direction: column;
+    }
     #pipi,
     .nongames p {
         font-size: 1.7vh;
