@@ -870,11 +870,11 @@ function space() {
 }
 
 if (!(localStorage.getItem('lang') === 'ee' || localStorage.getItem('lang') === 'lv' || localStorage.getItem('lang') === 'lt')) {
-  if (window.location.href !== '/preload.html' && window.location.pathname !== '/preload.html') {
+  if (window.location.pathname.startsWith('/preload.html')) {
     window.location.href = '/preload.html';
   }
 } else if ((localStorage.getItem('lang') === 'ee' || localStorage.getItem('lang') === 'lv' || localStorage.getItem('lang') === 'lt')) {
-  if (window.location.href.includes('/preload.html') && window.location.pathname === '/preload.html') {
+  if (!window.location.pathname.endsWith('/preload.html')) {
     window.location.href = '/index.html';
 }
 }
@@ -1105,7 +1105,7 @@ function loading() {
   }
 }
 
-const version = "1689307820";
+const version = "1689308033";
 console.log('URL: ' + window.location.pathname)
 
 window.addEventListener("DOMContentLoaded", () => {
