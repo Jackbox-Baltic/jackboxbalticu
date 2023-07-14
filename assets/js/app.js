@@ -869,16 +869,6 @@ function space() {
   }
 }
 
-if (!(localStorage.getItem('lang') === 'ee' || localStorage.getItem('lang') === 'lv' || localStorage.getItem('lang') === 'lt')) {
-  if (!window.location.pathname.endsWith('/preload.html')) {
-      window.location.href = '/preload.html';
-  }
-} else {
-  if (!window.location.pathname.endsWith('/index.html')) {
-      window.location.href = '/index.html';
-  }
-}
-
 
 
 // POPUP
@@ -1089,7 +1079,9 @@ function loading() {
     if(yawelcome) {
       yawelcome.style.display = "flex";
     }
-    idheader.style.display = "block";
+    if(idheader) {
+      idheader.style.display = "block";
+    }
   } else {
     if(qwelcome) {
       qwelcome.style.display = "flex";
@@ -1097,17 +1089,49 @@ function loading() {
     if(yawelcome) {
       yawelcome.style.display = "none";
     }
-    idheader.style.display = "none";
+    if(idheader) {
+      idheader.style.display = "none";
+    }
   }
   if(black) {
     black.style.display = "none";
   }
 }
 
-const version = "1689308212";
+const version = "1689308935";
 console.log('URL: ' + window.location.pathname)
 
 window.addEventListener("DOMContentLoaded", () => {
+  var currentPath = window.location.pathname;
+  currentPath = currentPath.replace(/^\/+/, '');
+
+  if (!(localStorage.getItem('lang') === 'ee' || localStorage.getItem('lang') === 'lv' || localStorage.getItem('lang') === 'lt')) {
+    if (!(currentPath === 'preload' ||
+    currentPath === '/preload.html' ||
+    currentPath === 'preload.html' ||
+    currentPath === '/preload' ||
+    currentPath === 'jackboxbalticu.pages.dev/preload' ||
+    currentPath === 'jackboxbalticu.pages.dev/preload.html' ||
+    currentPath === '127.0.0.1:5500/preload' ||
+    currentPath === '127.0.0.1:5500/preload.html')) {
+      window.location.href = '/preload.html';
+    }
+  } else {
+    if (!(currentPath === '' ||
+    currentPath === '/index.html' ||
+    currentPath === 'index.html' ||
+    currentPath === '/index' ||
+    currentPath === '/' ||
+    currentPath === 'jackboxbalticu.pages.dev/' ||
+    currentPath === 'jackboxbalticu.pages.dev/index' ||
+    currentPath === 'jackboxbalticu.pages.dev/index.html' ||
+    currentPath === '127.0.0.1:5500/' ||
+    currentPath === '127.0.0.1:5500/index' ||
+    currentPath === '127.0.0.1:5500/index.html')) {
+      window.location.href = '/index.html';
+    }
+  }
+
   if(sv){
     function siteversion() {
         sv.innerHTML = version;
