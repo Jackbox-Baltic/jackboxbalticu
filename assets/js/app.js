@@ -1031,7 +1031,7 @@ window.onload = function () {
 // qwelcome
 
 const languages = [
-  { id: "ee", text: "ee" },
+  { id: "ee", text: "Kui sa mõistad mind, vajuta seda nuppu" },
   { id: "lv", text: "Ja tu saproti mani, nospied šo pogu" },
   { id: "lt", text: "lt" }
 ];
@@ -1098,7 +1098,7 @@ function loading() {
   }
 }
 
-const version = "1689368731";
+const version = "1691971871";
 console.log('URL: ' + window.location.pathname)
 
 window.addEventListener("DOMContentLoaded", () => {
