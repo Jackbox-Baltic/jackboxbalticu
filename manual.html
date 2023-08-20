@@ -23,9 +23,9 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-    <link rel="icon" href="/assets/images/favicon.ico" sizes="any">
-    <link rel="icon" type="image/png" href="/assets/images/favicon-32.png" sizes="32x32" />
-    <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+    <link rel="icon" href="/assets/img/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" href="/assets/img/favicon-32.png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
 
     <script>
       document.documentElement.className = document.documentElement.className.replace("no-js", "js")
@@ -34,15 +34,26 @@
     <link href="./assets/css/manual.css" rel="stylesheet">
 </head>
 <body>
-  <header id="header"></header>
-  <section class="ltrc2">
-    <div class="ltrc3">
-      <div>
-        <h1 class="lang-howtoplay"></h1>
-        <p class="lang-howtoplayd"></p>
+  <header>
+    <ul>
+      <div class="ldiv">
+        <li><a href="index.html#jbu" class="lang-home">HOME</a></li>
+        <li><a href="index.html#games" class="lang-games">GAMES</a></li>
+        <li><a href="index.html#faq" class="lang-faq">FAQ</a></li>
+        <li><a href="#" class="lang-manual">HOW TO PLAY</a></li>
       </div>
-      <img class="bulb" src="./assets/images/bulb.png">
+      <div class="ldiv">
+        <li><a id="lang-ee">🇪🇪</a>　　<a id="lang-lv">🇱🇻</a></li>
+      </div>
+      <p class="tooltiptext">This site is not affiliated with Jackbox Games. Jackbox Games and the Jackbox Games logos are registered trademarks of Jackbox Games, Inc. All logos, images and videos displayed on this site may be trademarks of Jackbox Games, Inc. All other trademarks and logos are the property of their respective owners.</p>
+    </ul>
+</header>
+  <section class="ltrcmain">
+    <div>
+      <h1 class="lang-howtoplay"></h1>
+      <p class="lang-howtoplayd"></p>
     </div>
+    <img class="bulb" src="./assets/img/bulb.png">
   </section>
   <section class="whi">
     <div class="splitter">
@@ -61,13 +72,13 @@
           <div class="carousel-track-container">
             <ul class="carousel-track">
               <li class="carousel-slide current-slide">
-                <img class="carousel-image" src="/assets/images/02_Controller.jpg">
+                <img class="carousel-image" src="/assets/img/02_Controller.jpg">
               </li>
               <li class="carousel-slide">
-                <img class="carousel-image" src="/assets/images/03_EightOrMore.jpg">
+                <img class="carousel-image" src="/assets/img/03_EightOrMore.jpg">
               </li>
               <li class="carousel-slide">
-                <img class="carousel-image" src="/assets/images/04_TForTeen.jpg">
+                <img class="carousel-image" src="/assets/img/04_TForTeen.jpg">
               </li>
               <li class="carousel-slide">
                 <img class="carousel-image" src="" id="s1img">
@@ -103,7 +114,7 @@
           <div class="carousel-track-container">
             <ul class="carousel-track">
               <li class="carousel-slide current-slide">
-                <img class="carousel-image" src="/assets/images/06_ChooseAGame.jpg">
+                <img class="carousel-image" src="/assets/img/06_ChooseAGame.jpg">
               </li>
               <li class="carousel-slide">
                 <img class="carousel-image" src="" id="s2img1">

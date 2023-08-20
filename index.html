@@ -11,7 +11,7 @@
     <meta name="og:title" content="Jackbox Baltic United">
     <meta name="og:type" content="website">
     <meta name="og:description" content="Jackbox Baltic United | An independent initiative, brings together the love for Jackbox Games party games and a wish to provide people of Estonian, Latvian, and Lithuanian backgrounds a chance to have the same fun in their native language!">
-    <meta name="og:image" content="/assets/images/favicon-192.png">
+    <meta name="og:image" content="/assets/img/favicon-192.png">
 
     <meta name="application-name" content="JBU" />
     <meta name="mobile-web-app-capable" content="yes">
@@ -23,78 +23,91 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-    <link rel="icon" href="/assets/images/favicon.ico" sizes="any">
-    <link rel="icon" type="image/png" href="/assets/images/favicon-32.png" sizes="32x32" />
-    <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+    <link rel="icon" href="/assets/img/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" href="/assets/img/favicon-32.png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
 
     <script>
       document.documentElement.className = document.documentElement.className.replace("no-js", "js")
     </script>
 
     <link href="./assets/css/main.css" rel="stylesheet">
-    <link href="./assets/css/lib.css" rel="stylesheet">
-    <link href="./assets/css/index.css" rel="stylesheet">
-    <link href="./assets/css/snow.css" rel="stylesheet">
 
-    <link href="./assets/css/recent.css" rel="stylesheet">
     <link href="./assets/css/listofgames.css" rel="stylesheet">
+    <link href="./assets/css/tjpps.css" rel="stylesheet">
 </head>
 <body>
     <noscript>Javascript must be enabled. Please enable Javascript in your browser settings and reload the page.</noscript>
-    <header id="header"></header>
     <main>
-        <div id="yawelcome">
-            <section class="game_background">
-                <div class="ltrc">
-                    <div>
-                        <h1 class="lang-welcome"></h1>
-                        <p class="lang-jackboxbaltic"></p>
-                    </div>
-                    <div>
-                        <img src="./assets/images/6.png">
-                    </div>
+        <section id="jbu" class="jbu">
+          <div class="jbu control">
+            <h1>JACKBOX BALTIC UNITED</h1>
+            <h2 class="lang-jackboxbaltic"></h2>
+          </div>
+        </section>
+        <section id="games" class="games"></section>
+        <section id="faq" class="faq">
+          <div class="control">
+            <h1 class="lang-faqtext sp"></h1>
+              <div id="accordion" class="accordion">
+                <div class="accordion-item">
+                  <div class="accordion-item-header"><p class="qfaq lang-q1"></p></div>
+                  <div class="accordion-item-body">
+                    <div class="accordion-item-body-content"><p class="afaq lang-a1"></p></div>
+                  </div>
                 </div>
-            </section>
-            <section id="re" class="rtlc">
-                <div id="reg" class="tblr">
-                    <h1 class="lang-rtg"></h1>
-                    <div class="space"></div>
-                    <div id="games"></div>
+                <div class="accordion-item">
+                  <div class="accordion-item-header"><p class="qfaq lang-q2"></p></div>
+                  <div class="accordion-item-body">
+                    <div class="accordion-item-body-content"><p class="afaq lang-a2"></p></div>
+                  </div>
                 </div>
-            </section>
-            <section id="bre" class="rtlc">
-                <div id="sbre">
-                    <div id="breg">
-                        <h1 class="lang-aboutjg"></h1>
-                        <p id="pipi" class="lang-aboutjgd"></p>
-                    </div>
-                    <img src="./assets/images/jackboxgames.png">
+                <div class="accordion-item">
+                  <div class="accordion-item-header"><p class="qfaq lang-q3"></p></div>
+                  <div class="accordion-item-body">
+                    <div class="accordion-item-body-content"><p class="afaq lang-a3"></p></div>
+                  </div>
                 </div>
-            </section>
-            <section id="re" class="rtlc">
-                <div id="reg">
-                    <h1 class="lang-help"></h1>
-                    <p id="pipi" class="lang-discorddi pipib"></p>
-                    <li class="b">
-                        <a href="https://discord.gg/TNK3wsHHUW" target="_blank" class="lang-ds"><div style="border: 3px solid var(--bgrecent);" class="indicator"></div></a>
-                    </li>
+                <div class="accordion-item">
+                  <div class="accordion-item-header"><p class="qfaq lang-q4"></p></div>
+                  <div class="accordion-item-body">
+                    <div class="accordion-item-body-content"><p class="afaq lang-a4"></p></div>
+                  </div>
                 </div>
-            </section><!--
-            <section id="bre" class="rtlc">
-                <div id="reg">
-                    <div id="breg">
-                        <h1 class="lang-cont"></h1>
-                        <p class="lang-contd"></p>
-                    </div>
-                    <li class="b">
-                        <a href="https://discord.gg/TNK3wsHHUW" target="_blank" class="lang-ds"><div style="border: 3px solid var(--bgrecent);" class="indicator"></div></a>
-                    </li>
+              </div>
+          </div>
+        </section>
+        <section id="ajg">
+          <div class="ajg control">
+            <h2 class="lang-aboutjgd"></h2>
+            <h1 class="lang-aboutjg"></h1>
+          </div>
+        </section>
+        <header>
+            <ul>
+              <div class="ldiv">
+                <li><a href="#jbu" class="lang-home">HOME</a></li>
+                <li><a href="#games" class="lang-games">GAMES</a></li>
+                <li><a href="#faq" class="lang-faq">FAQ</a></li>
+                <li><a href="manual.html" class="lang-manual">HOW TO PLAY</a></li>
+              </div>
+              <div class="ldiv">
+                <!--
+                <div class="dropdown-content">
+                  <a id="lang-ee">Eesti</a>
+                  <a id="lang-lv">Latviešu</a>
+                  <a id="lang-lt">Lithuanian</a>
                 </div>
-            </section>-->
-        </div>
+                <li><a id="lbtn" class="toggle toggle-lang">🌐</a></li>
+                <li><a id="tct" class="toggle toggle-theme">🌞</a></li>-->
+                <li><a id="lang-ee">🇪🇪</a>　　<a id="lang-lv">🇱🇻</a></li>
+              </div>
+              <p class="tooltiptext">This site is not affiliated with Jackbox Games. Jackbox Games and the Jackbox Games logos are registered trademarks of Jackbox Games, Inc. All logos, images and videos displayed on this site may be trademarks of Jackbox Games, Inc. All other trademarks and logos are the property of their respective owners.</p>
+            </ul>
+        </header>
         <section id="black">
-            <img src="./assets/images/jackboxgames.png">
-            <h1>Jackbox Baltic United</h1>
+          <img src="./assets/img/jackboxgames.png">
+          <h1>Jackbox Baltic United</h1>
         </section>
     </main>
     <!--<div id="snowflakeContainer" style="display: block;">
