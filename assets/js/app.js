@@ -256,6 +256,7 @@ const langArr = {
         toggleladoff: 'HELE REŽIIM',
         modalsubtext: 'Sait ei ole veel valmis. "OK" nupp suunab sind töötavale inglisekeelsele saidile.',
         havefun: 'Lõbutsege!',
+        home: "KODU",
         faq: 'KKK',
         news: 'UUDISED',
         games: 'MÄNGUD',
@@ -498,7 +499,7 @@ const langArr = {
       });
     }
     
-    var lang = (window.hasOwnProperty("localStorage") && window.localStorage.getItem("lang", lang)) || "";
+    var lang = (window.hasOwnProperty("localStorage") && window.localStorage.getItem("lang", lang)) || "en";
     setLang(lang);
 
 // FAQ
@@ -626,7 +627,7 @@ if(carousel){
 
 const sv = document.getElementById("sv");
 var black = document.getElementById("black");
-const version = "1692545251";
+const version = "1692545251.1";
 console.log('URL: ' + window.location.pathname)
 window.addEventListener("DOMContentLoaded", () => {
   if(sv){
