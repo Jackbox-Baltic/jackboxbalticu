@@ -143,7 +143,12 @@ function newgames(text) {
 const gamessadDataee = [{
   nttext: "Hetkel meil ei ole tõlkeid, aga võid meie tõlketiimiga ühineda!",
   ds: "DISCORDI SERVER"
-  }];
+}];
+
+const gamessadDatalt = [{
+  nttext: "Šiuo metu neturime jokių vertimų, bet galite prisijungti prie mūsų vertimų komandos!",
+  ds: "DISCORDO SERVERIS"
+}];
 
 function gamessad(text) {
   return `
@@ -403,17 +408,75 @@ const langArr = {
         toggleladoff: 'ŠVIESUSIS REŽIMAS',
         modalsubtext: 'Tinklalapis šiuo metu nepasiekiamas. Paspaudus "OK" atidarysite versiją anglų kalba.',
         havefun: 'Gero laiko!',
+        home: "PRADŽIA",
         faq: 'DUK',
         news: 'NAUJIENOS',
         games: 'ŽAIDIMAI',
-        site: 'Site: ',
+        manual: "KAIP ŽAISTI?",
+        aboutus: 'apie mus',
+        site: 'Puslapis: ',
         titlefaq: 'DUK',
         titlenews: 'Naujienos',
         titlegames: 'Žaidimai',
+        titleaboutus: 'Apie muss',
+        titlemanual: 'Kaip žaisti?',
         drawful: "Škicas",
     
         ds: "DISCORDO SERVERIS",
-    }
+        jackboxbaltic: "<strong>Jackbox Baltic</strong>, nepriklausoma iniciatyva sujungianti meilę Jackbox žaidimams ir norą suteikti Estijos, Latvijos ir Lietuvos kilmės žmonėms galimybę linksmai praleisti laiką savo gimtąja kalba! Mes esame maža ir įvairialypė komanda, dirbanti su vertimų, programavimo ir vietinimo darbais įvairiems Jackbox Games žaidimams.",
+        download: 'Parsisiųsti vertimus',
+        downloadrn: 'Parsisiųsti vertimus dabar!',
+        statust: 'Išversta',
+        statusdnt: 'Neišversta',
+        statusip: 'Vis dar dirbama',
+        screenblocker: 'Deja, šis ekrano dydis nėra palaikomas!',
+        pity: "PITY",
+        discorddi: 'Jackbox Baltic yra svetainė, kurioje mes talpiname neoficialias estų, latvių ir lietuvių kalbų vertimus Jackbox Games žaidimams, žinomiems kaip Jackbox Party Packs. Mes dar tik pačioje savo žaidimų lokalizacijos pradžioje, todėl galite mums padėti prisijungę prie mūsų komandos Discord serverio!',
+        welcome: "Sveiki!",
+        aboutjg: "Apie Jackbox Games",
+        aboutjgd: "<strong>Jackbox Games</strong> yra nedidelė žaidimų kūrimo studija iš Čikagos (Ilinojaus). Žinomiausia jų prekės ženklų serija - \"You Don\'t Know Jack\" - yra leidžiama nuo 1995 metų ir net egzistavo kaip televizijos šou. Būdama Jellyvision dalis, įmonė 2013 metais atsiskyrė ir buvo pavadinta \"Jackbox Games\". Be \"Jackbox Party Pack\" prekės ženklo, yra leidžiami ir kiti įvairūs žaidimai, pavyzdžiui - \"Quiplash\", \"Fibbage\", \"Trivia Murder Party\".",
+        
+        cont: "Kontaktai",
+        contd: "Jeigu turite klausimų, pasiūlymų arba tiesiog norite pasikalbėti, geriausias būdas susisiekti yra per:",
+        from: "nuo",
+        csoon: 'Jau greitai',
+        stext: "Būsena",
+        recentlytgtitle: "Naujai išversti žaidimai",
+        view: "ŽIŪRĖTI ŠĮ ŽAIDIMĄ",
+
+        faqtext: "Dažniausiai Užduodami Klausimai",
+        q1: "Kodėl mano ekranas užtemsta įrašius vertimus?",
+        a1: "Jeigu po vertimų įdiegimo ekranas tampa juodas, tai reiškia, kad jūsų versija yra suklastota (piratinė). Suklastotos versijos dažnai yra pasenusios ir neturi tokios pačios failų struktūros kaip dabartinės versijos. Mes galime tik paskatinti jus įsigyti legalią versiją.",
+        q2: "Noriu žaisti. Kur gauti žaidimo (kambario) kodą?",
+        a2: "<p>Yra du būdai:</p><ul><li><strong>pradžiai</strong> – įsigykite žaidimą naudodami steam platformą, įrašykite <a href=\"ndex.html#games\">mūsų vertimą</a> , o tada tęskite naudodami <a href=\"/manual.html\">instrukcijas</a>.<!--Jei šiuo metu neturite su kuo žaisti <a href=\"finder.html\">here</a>.--></li><li><!--<a href=\"finder.html\">--><strong>visada galite prisijungti prie kitų žmonių sukurtų žaidimų kambarių</strong><!--</a>--> — nepamirškite, kad jūs NEPRIVALOTE pirkti žaidimo norint tik dalyvauti juose, tiesiog įveskite žinomą kambario kodą puslapyje <a href=\"https://jackbox.tv\">jackbox.tv</a>, ir iškart dalyvaukite to kambario žaidimo sesijoje.</li></ul><p>Ir dar kartelį: tik žmogus sukuriantis žaidimo kambarį (žaidimo vedėjas) privalo turėti mokamą žaidimo licenziją.<br>Vedėjas ar vedėja sukūrus žaidimo kambarį, prisijungia prie jo naudodami savo naršyklę (telefonais, planšetėmis arba kompiuteriais) per<a href=\"https://jackbox.uno\">jackbox.TV</a>, nieko papildomo įdiegti nereikia.</p>",
+        q3: "Aš pirkau Party Pack per Epic Games Parduotuvę, kaip galėčiau įrašyti vertimus?",
+        a3: "Atsiprašome, bet šiuo metu darome vertimus tik Steam platformai.",
+        q4: "Radau klaidą viename iš vertimų, kur man apie tai pranešti?",
+        a4: "Apsilankykite <span class=\"discord\">🔹︙mistakes</span> kanale <a href=\"https://discord.gg/TNK3wsHHUW\">kurį rasite mūsų diskordo serveryje</a>. <br> Jei įmanoma, duokite kuo daugiau informacijos, kas mums padeda sutvarkyti tokias bėdas kuo greičiau.",
+      
+        howtoplay: "KAIP ŽAISTI?",
+        howtoplayd: "Taigi panorai žaisti Jackbox Games! puikus sprendimas.",
+        s1t1: "Pradėti lengva! Jackbox games, žaidimuose tavo telefonas ar planšetė veikia kaip žaidimų pultai, dažniausiai leidžiantys prisijungti apie 8 žmones, kartais ir daugiau! Pagrindinė žaidimo veiksmo dalis vyksta jūsų televizoriaus ekrane (arba bet kur kitur kur tik paleidote žaidimą), tačiau žaidėjai naudoja savo mobilius įrenginius, įvesti atsakymams ir priimti tam tikriems sprendimams.",
+        s1t2: "Visi Jackbox žaidimai yra tinkami paaugliams. Daugelyje žaidimų egzistuoja šeimai draugiškas režimas, kurį galima įjungti per žaidimo nustatymų meniu, kuris pritraukia žaidimą arti E10+ įvertinimo!",
+        s1t3: "Atminkite, Jackbox produktą privalo turėti tik vienas žmogus, kuris dažniausiai yra traktuojamas vedėju.",
+        s2h1: "ĮJUNKITE ŽAIDIMĄ IR GRIEBKITE SAVO MOBILIUOSIUS",
+        s2t1: "Kai išsirinksite ir paleisite žaidimą, kurį norite žaisti, pamatysite keturių raidžių kambario kodą..",
+        s2t2: "Norėdami prisijungti, kiekvienas žaidėjas naudoja savo telefoną arba planšetinį kompiuterį ir eina į svetainę jackbox.uno, tada pasirenka kalbą, kuria žaisite.",
+        s3h1: "ĮVESKITE ŽAIDIMO KAMBARIO KODĄ PER JACKBOX.TV",
+        s3t1: "Kai ten atsidursite, įveskite keturių raidžių kambario kodą savo mobiliuoju įrenginiu..",
+        s3t2: "Tada įveskite bet kokį vardą, kurį norite naudoti žaidime. Paspauskite mygtuką ŽAISTI, ir turėtumėte būti prisijungę!",
+        s3t3: "The Jackbox Party Pack 9 versijoje taip pat galima nuskanuoti QR kodą naudojant savo mobiliojo įrenginio kamerą, kuris jus nusiųs į reikiamą nuorodą.",
+        s3t4: "Jeigu atsijungiate žaidimo metu, atnaujinkite (atidarykite svetainę iš naujo) puslapį. Tai ištaiso daugumą trigdžių!",
+        s4h1: "PRADĖKITE ŽAIDIMĄ!",
+        s4t1: "Pirmasis prisijungęs asmuo tampa VIP (vedėjas). Kai visi, kurie nori žaisti, prisijungia ir yra pasiruošę, VIP gali pradėti žaidimą savo įrenginyje.",
+        s4t2: "Jeigu įjungėte „Pradėti žaidimą tik iš valdiklio“ funkciją (žaidimo nustatymų meniu), jums reikės spausti ekrane rodomą mygtuką, norint pradėti žaidimą.",
+        s4t3: "PASTABA: \"Visi prisijungę\" arba \"Pradėti žaidimą\" ekrane atsiras tik tada, jei turite pakankamai žaidėjų pradėti žaidimą..",
+        
+        help: "Ieškome bendraminčių",
+        oopsd: "Šiuo metu šiam žaidimui vertimo neturime.",
+        pity: "GAILA",
+        tjppstext: "Mūsų išleisti vertimai yra skirti „Steam“ platformai, „Windows“ operacinei sistemai (+ „Humble/Fanatical“). Kitos platformos („Epic Games“) kol kas nebuvo išbandytos.<br>Šiame puslapyje galite gauti modifikacijų, kurios prideda jūsų norimas kalbas prie Jackbox žaidimų. Atkreipkite dėmesį, kad kol kas ne visi žaidimai yra išversti, ir vertimai gali turįti klaidų ar netikslumų. Tačiau visada galite mums padėti prisijungdami prie mūsų „Discord“ serverio. <br>Vertimui atsisiųsti turite turėti žaidimą „Steam“ platformoje. Mes nepalaikome piratavimo ir neskiriame pagalbos jo atvejais!",
+      }
   };
 
   const carousel = document.querySelector(".carousel");
@@ -480,6 +543,11 @@ const langArr = {
         }
         if (lang == "lt") {
             console.log(langArr[lang]['lang']);
+            if(document.getElementById("games")) {
+              document.getElementById("games").innerHTML = `
+                ${gamessadDatalt.map((game) => gamessad(game)).join("")}
+              `;
+            }
         }
     }
     
@@ -627,7 +695,7 @@ if(carousel){
 
 const sv = document.getElementById("sv");
 var black = document.getElementById("black");
-const version = "1692545251.1";
+const version = "1692545251.2";
 console.log('URL: ' + window.location.pathname)
 window.addEventListener("DOMContentLoaded", () => {
   if(sv){
