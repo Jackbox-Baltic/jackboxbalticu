@@ -1,32 +1,32 @@
 .image.tjpp {
-  background-image: url("https://jackboxgames.b-cdn.net/wp-content/uploads/2019/07/PP1_tile.jpg");
+  background-image: url("../img/PP1_tile.jpg")
 }
 .image.tjpp2 {
-  background-image: url("https://jackboxgames.b-cdn.net/wp-content/uploads/2019/07/PP2_tile.jpg");
+  background-image: url("../img/PP2_tile.jpg")
 }
 .image.tjpp3 {
-  background-image: url("https://jackboxgames.b-cdn.net/wp-content/uploads/2019/07/PP3_tile.jpg");
+  background-image: url("../img/PP3_tile.jpg")
 }
 .image.tjpp4 {
-  background-image: url("https://jackboxgames.b-cdn.net/wp-content/uploads/2019/07/PP4_tile.jpg");
+  background-image: url("../img/PP4_tile.jpg")
 }
 .image.tjpp5 {
-  background-image: url("https://jackboxgames.b-cdn.net/wp-content/uploads/2019/07/PP5_tile.jpg");
+  background-image: url("../img/PP5_tile.jpg")
 }
 .image.tjpp6 {
-  background-image: url("https://jackboxgames.b-cdn.net/wp-content/uploads/2019/09/WebsiteTile-2.jpg");
+  background-image: url("../img/WebsiteTile-2.jpg")
 }
 .image.tjpp7 {
-  background-image: url("https://jackboxgames.b-cdn.net/wp-content/uploads/2020/09/website-title-1.jpg");
+  background-image: url("../img/website-title-1.jpg")
 }
 .image.tjpp8 {
-  background-image: url("https://jackboxgames.b-cdn.net/wp-content/uploads/2021/09/PP8_Nintendo_FirstLook-1Artboard-1.jpg");
+  background-image: url("../img/PP8_Nintendo_FirstLook-1Artboard-1.jpg")
 }
 .image.tjps {
-  background-image: url("https://jackboxgames.b-cdn.net/wp-content/uploads/2022/04/JBPS_635x291px.jpg");
+  background-image: url("../img/JBPS_635x291px.jpg")
 }
 .image.tjpp9 {
-  background-image: url("https://jackboxgames.b-cdn.net/wp-content/uploads/2022/08/pp9temptile.jpg");
+  background-image: url("../img/pp9temptile.jpg")
 }
 
 /* TJPP */
@@ -56,6 +56,9 @@
 /* TJPP3 */
 .image.TeeKOGame {
   background-image: url(https://bundles.jackbox.tv/main/@connect/assets/3bae2cc0.jpg);
+}
+.image.TeeKOGameLV {
+  background-image: url("../img/kreko.jpg")
 }
 .image.Quiplash2Game {
   background-image: url(https://bundles.jackbox.tv/main/@connect/assets/eb69738a.jpg);
@@ -167,4 +170,9 @@
 }
 .image.LineupGame {
   background-image: url(https://bundles.jackbox.tv/main/@connect/assets/c196efa4.jpg);
+}
+
+/* TJPS */
+.image.TJPSTeeLV {
+  background-image: url(https://s3.amazonaws.com/cms-assets.jackbox.studio/TJPS_TKO_tile_9f1fed1b07.png);
 }

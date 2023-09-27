@@ -101,7 +101,7 @@ const gamesDatalv = [/*{
 const newgamesDatalv = [
   {
     href: "",
-    image: "TeeKOGame",
+    image: "TJPSTeeLV",
     name: "Kre K.O.",
     span: "THE JACKBOX PARTY STARTER",
     date: "2023. gada 01. jūlijs",
@@ -110,7 +110,7 @@ const newgamesDatalv = [
   },
   {
     href: "",
-    image: "TeeKOGame",
+    image: "TeeKOGameLV",
     name: "Kre K.O.",
     span: "THE JACKBOX PARTY PACK 3",
     date: "2022. gada 21. decembris",
@@ -180,6 +180,7 @@ const langArr = {
         titlefaq: 'FAQ',
         titlenews: 'News',
         titlegames: 'Games',
+        home: "HOME",
         tjppd: 'Long gone are quiet nights in watching the same old TV shows – The Jackbox Party Pack is here! Experience five fun games in one great pack – giving you the perfect excuse for rounding up friends, family and fellow gamers for a few hours of gaming delight – whatever the day, whatever the occasion. You’re gonna need more than one party for this.',
         download: 'Download translation',
         downloadrn: 'Download translation right now!',
@@ -220,10 +221,10 @@ const langArr = {
         s1img: "./assets/images/05_OneOwnerToHost.jpg",
         s2h1: "LAUNCH THE GAME AND GRAB A MOBILE DEVICE",
         s2t1: "Once you launch and pick the game you want to play, you’ll see a four-letter room code in the lobby.",
-        s2t2: "To join, each player uses their phone or tablet and goes to jackbox.uno, then choose the language you are playing in, using whatever web browser you normally use.",
+        s2t2: "To join, each player uses their phone or tablet and goes to jackbox.tv, then choose the language you are playing in, using whatever web browser you normally use.",
         s2img1: "./assets/images/07_RoomCode.jpg",
         s2img2: "./assets/images/08_ControllerWebsite.jpg",
-        s3h1: "ENTER THE ROOM CODE AT JACKBOX.UNO",
+        s3h1: "ENTER THE ROOM CODE AT JACKBOX.TV",
         s3t1: "Once you’re there, enter that four-letter room code on your mobile device.",
         s3t2: "Then, enter whatever name you want to use in the game. Hit the PLAY button, and you should be connected!",
         s3t3: "In The Jackbox Party Pack 9, you can also connect by pointing your phone camera at the QR code in the lobby and then following the URL that appears.",
@@ -242,7 +243,7 @@ const langArr = {
         q1: "Why do I get a black screen after installing my translation?",
         a1: "If the screen goes black after installing the translation, it means that your version is pirated. Pirated versions are often outdated and do not have the same file structure as current versions. We can only encourage you to get a legitimate version.",
         q2: "I want to play. Where do I get the room code?",
-        a2: "<p>There are two options:</p><ul><li><strong>to start yourself</strong> – you need to buy the game on Steam, install <a href=\"games/index.html\">our translation</a> and then proceed according to <a href=\"/future/manual.html\">the manual</a>.<!--If there is no company or friends, then look <a href=\"finder.html\">here</a>.--></li><li><!--<a href=\"finder.html\">--><strong>to find someone else's game</strong><!--</a>--> — you DON't need to buy and install the game, just find out the room code and go through <a href=\"https://jackbox.uno\">jackbox.uno</a>, then watch the gameplay where you got the code.</li></ul><p>Once again: the purchased and installed game is needed only by the one who starts (the host).<br>He and the rest of the participants join the game from their browsers (phones, tablets or computers) via <a href=\"https://jackbox.uno\">Jackbox.UNO</a>, you don't need to install anything else.</p>",
+        a2: "<p>There are two options:</p><ul><li><strong>to start yourself</strong> – you need to buy the game on Steam, install <a href=\"games/index.html\">our translation</a> and then proceed according to <a href=\"/future/manual.html\">the manual</a>.<!--If there is no company or friends, then look <a href=\"finder.html\">here</a>.--></li><li><!--<a href=\"finder.html\">--><strong>to find someone else's game</strong><!--</a>--> — you DON't need to buy and install the game, just find out the room code and go through <a href=\"https://jackbox.tv\">jackbox.tv</a>, then watch the gameplay where you got the code.</li></ul><p>Once again: the purchased and installed game is needed only by the one who starts (the host).<br>He and the rest of the participants join the game from their browsers (phones, tablets or computers) via <a href=\"https://jackbox.tv\">Jackbox.TV</a>, you don't need to install anything else.</p>",
         q3: "I bought a Party Pack on the Epic Games Store, how do I download the translation?",
         a3: "Apologies, but we are currently doing translations of the Steam version.",
         q4: "I found an error in one of the translations. Where can I report it?",
@@ -251,7 +252,21 @@ const langArr = {
         tjpsd: "Jackbox Party Starter is an indispensable party game! This pack contains three updated games: Quiplash 3, Tee K.O. and Trivia Murder Party 2.",
         tjppstext: "Our translation is released for Windows OS based version of Steam (+ Humble/Fanatical). Other platforms (Epic Games) have not been tested.<br>On this page you can get a modification that adds a language to the game. Please note that not all games are translated and there may be errors or inaccuracies. However you can help us by entering the Discord Server. <br>To download the translation you need to have the game on Steam. We do not support piracy and will not help!",
         tjpp3d: "The threequel to the party game phenomenon features the deadly quiz show Trivia Murder Party, the say-anything sequel Quiplash 2, the surprising survey game Guesspionage, the t-shirt slugfest Tee K.O., and the sneaky trickster game Fakin’ It.",
-      },
+      
+        legalinfo: 'Legal Information',
+        l1p: 'We (hereinafter referred to as JBU) strive to create high-quality translations of The Jackbox Party Pack franchises (hereinafter referred to as the game) for your enjoyment and convenience. Our goal is to make these games accessible to everyone who does not speak the original language of Jackbox Games (hereinafter referred to as the developer). However, we want to openly and honestly declare our disclaimer and the terms of use for our translations.',
+        l2h: 'Unofficial Translations',
+        l2p: 'JBU is not an official representative of the game developers and does not have their permission for translation. Our translations are a creative effort by participants and are based on their skills and knowledge. Please remember that we do not have any official status with respect to these games.',
+        l3h: 'Unsupported Errors',
+        l3p: 'During the translation and adaptation process, errors or discrepancies may occur. We make every effort to ensure the quality of our translations, but we cannot guarantee their flawless accuracy. Please understand that some issues may arise.',
+        l4h: 'Piracy',
+        l4p: 'We strongly disapprove of the pirated distribution of games. Our translations are intended only for users who own original copies of the games. Please comply with the law and respect the intellectual property of the game developers.',
+        l5h: 'Updates',
+        l5p: 'Our team may periodically update the translations to improve quality or correct errors. We do not commit to supporting outdated versions of the translations.',
+        l6h: 'Use at Your Own Risk',
+        l6p: 'By using our translations, you do so at your own risk. Risks include compatibility and stability, legality, updates, and support. We are not responsible for any damage that may occur as a result of using our translations.',
+        l7p: 'We hope that our efforts will help you enjoy the games in your native language, but we ask you to adhere to the above-mentioned terms and understand that we are not official representatives of the developers. Thank you for your support and understanding.',
+    },
     ee: {
       lang: 'Eesti',
         ds: 'DISCORDI SERVER',
@@ -305,9 +320,9 @@ const langArr = {
     
         s2h1: "AVA MÄNG JA KRABA NUTISEADE",
         s2t1: "Kui oled mängu välja valinud ja avanud, siis tekib ekraanile neljakohaline ruumikood.",
-        s2t2: "Ruumiga ühinemiseks iga mängija läheb oma nutiseadmel veebilehele jackbox.uno ning valib õige keele.",
+        s2t2: "Ruumiga ühinemiseks iga mängija läheb nutiseadmel veebilehele jackbox.tv.",
     
-        s3h1: "SISESTA RUUMIKOOD LEHEL JACKBOX.UNO",
+        s3h1: "SISESTA RUUMIKOOD LEHEL JACKBOX.TV",
         s3t1: "Oma nutiseadmega veebilehel olles, sisesta neljakohaline ruumikood.",
         s3t2: "Seejärel vali enda ekraaninimi, vajuta MÄNGI ja sa oled mängus sees!",
         s3t3: "Jackbox Party Pack 9 mängus on võimalik ühineda mänguga ekraanilolevat QR-koodi skännides.",
@@ -322,13 +337,27 @@ const langArr = {
         q1: "Miks on ekraan must peale tõlke allalaadimist?",
         a1: "Juhul, kui teie ekraan mustaks läheb peale tõlke allalaadimist, on teie mäng piraaditud. Paraku piraaditud versioonid ei pruugi olla regulaarselt uuendatud, seega failistruktuurid ei pruugi ühtida. Siinkohal julgustame teid siiski mängu ostma.",
         q2: "Sooviks mängida. Kust saab ruumikoodi?",
-        a2: "<p>Mängimiseks on kaks valikut:</p><ul><li><strong>ise ruumi alustamiseks</strong> – hangi mäng Steamist, lae alla <a href=\"games/index.html\">meie tõlge</a> ja järgi <a href=\"/manual.html\">juhendis</a> olevaid juhtnööre.<!--Kui pole seltskonda, kellega mängida, siis vaata<a href=\"finder.html\">siia</a>.--></li><li><!--<a href=\"finder.html\">--><strong>mängida olemasolevas ruumis</strong><!--</a>--> — ei pea mängu alla laadima! Lihtsalt küsi mängu alustajalt ruumikoodi, ühine lehelt <a href=\"https://jackbox.uno\">jackbox.uno</a>, ning vaata ekraani, kus mängu näidatakse. </li></ul><p>Sellisel juhul on ainult mängu alustajal vaja omada ning alla laadida mäng.<br>Alustaja ning teised mängijad ühinevad läbi oma nutiseadmete (telefonide, tahvlite või arvutite) leheküljel <a href=\"https://jackbox.uno\">jackbox.UNO</a> – midagi pole vaja alla laadida.</p>",
+        a2: "<p>Mängimiseks on kaks valikut:</p><ul><li><strong>ise ruumi alustamiseks</strong> – hangi mäng Steamist, lae alla <a href=\"games/index.html\">meie tõlge</a> ja järgi <a href=\"/manual.html\">juhendis</a> olevaid juhtnööre.<!--Kui pole seltskonda, kellega mängida, siis vaata<a href=\"finder.html\">siia</a>.--></li><li><!--<a href=\"finder.html\">--><strong>mängida olemasolevas ruumis</strong><!--</a>--> — ei pea mängu alla laadima! Lihtsalt küsi mängu alustajalt ruumikoodi, ühine lehelt <a href=\"https://jackbox.tv\">jackbox.tv</a>, ning vaata ekraani, kus mängu näidatakse. </li></ul><p>Sellisel juhul on ainult mängu alustajal vaja omada ning alla laadida mäng.<br>Alustaja ning teised mängijad ühinevad läbi oma nutiseadmete (telefonide, tahvlite või arvutite) leheküljel <a href=\"https://jackbox.tv\">jackbox.TV</a> – midagi pole vaja alla laadida.</p>",
         q3: "Ostsin Party Packi Epic Games poest, kuidas ma tõlke saan alla laadida?",
         a3: "Hetkel on tõlked saadaval Steami versioonidele.",
         q4: "Ma leidsin tõlkes vea. Kus ma saan sellest teada anda?",
         a4: "Vigadest saab teada anda <a href=\"https://discord.gg/TNK3wsHHUW\">meie Discordi serveris</a> kanalis <span class=\"discord\">🔹︙mistakes</span>. <br>Võimaluse korral olge detailsed, nii saame probleemi kiiremini lahendatud.",
-         
-    },
+      
+        legalinfo: 'Õiguslik teave',
+        l1p: 'Meie (edaspidi "JBU") püüdleme selle nimel, et luua kvaliteetseid tõlkeid Jackbox Party Packi frantsiisidest (edaspidi "mäng"), teile meelelahutuseks ja mugavuseks. Meie eesmärk on teha need mängud kättesaadavaks kõigile, kes ei räägi Jackbox Gamesi (edaspidi "arendaja") originaalkeeli. Tahame siiski avalikult ja ausalt deklareerida oma vastutuse lahtiütlemist ja meie tõlgete kasutustingimusi.',
+        l2h: 'Mitteametlikud tõlked',
+        l2p: 'JBU ei ole mänguarendajate ametlik esindaja ja meil puudub nende luba tõlkimiseks. Meie tõlked on asjaosaliste loominguline jõupingutus ja põhinevad nende oskustel ja teadmistel. Palun pidage meeles, et meil ei ole nende mängude suhtes mingit ametlikku staatust.',
+        l3h: 'Toetamata vead',
+        l3p: 'Tõlkimise ja kohandamise käigus võib esineda vigu või lahknevusi. Me teeme kõik endast oleneva, et tagada meie tõlgete kvaliteet, kuid me ei saa garanteerida nende veatut täpsust. Palun mõistke, et mõned tõrked võivad tekkida.',
+        l4h: 'Piraatlus',
+        l4p: 'Me mõistame sügavalt hukka mängude ebaseadusliku levitamise. Meie tõlked on mõeldud ainult neile kasutajatele, kes omavad mängude originaalkoopiaid. Palun järgige seadust ja austage mänguarendajate intellektuaalset omandit.',
+        l5h: 'Uuendused',
+        l5p: 'Meie meeskond võib tõlkeid perioodiliselt uuendada, et parandada kvaliteeti või parandada vigu. Me ei võta endale kohustust toetada vananenud tõlkeversioone.',
+        l6h: 'Kasutamine omal vastutusel',
+        l6p: 'Kasutades meie tõlkeid teete seda omal vastutusel. Riskid hõlmavad ühilduvust ja stabiilsust, õiguspärasust, uuendusi ja tuge. Me ei vastuta võimalike kahjude eest, mis võivad tekkida meie tõlgete kasutamise tagajärjel.',
+        l7p: 'Loodame, et meie jõupingutused aitavad teil mänge oma emakeeles nautida, kuid palume teil järgida ülalnimetatud tingimusi ja mõista, et me ei ole arendajate ametlikud esindajad. Täname teid toetuse ja mõistmise eest.',
+        tjppstext: "Meie tõlked on avaldatud Windowsi operatsioonisüsteemil põhinevale Steami versioonile (+ Humble/Fanatical). Teisi platvorme (Epic Games) ei ole testitud.<br>Sellel leheküljel saate versiooni, mis lisab mängule vastava keele. Siinkohal mainime, et kõik mängud ei ole tõlgitud ja tõlkes võib esineda vigu või ebatäpsusi, milles saate meid aidata, kui ühinete meie Discord serveriga. <br>Tõlke allalaadimiseks peab teil olema mäng Steamis. Me ei toeta piraatlust ja ei aita!",
+      },
     lv: {
       lang: 'Latviešu',
         ds: 'DISCORD SERVERIS',
@@ -377,8 +406,8 @@ const langArr = {
         s1t3: "Ņem vērā, ka tikai vienai personai tavā grupā ir jābūt Jackbox precei, lai varētu rīkot spēli.",
         s2h1: "PALAIDI SPĒLI UN PAŅEM IERĪCI",
         s2t1: "Kad uzsāksi un izvēlēsies spēli, lobijā redzēsi četru burtu telpas kodu.",
-        s2t2: "Lai pievienotos, katrs spēlētājs, izmantojot tālruni vai planšetdatoru, dodas uz vietni jackbox.uno, pēc tam izvēlas valodu, un izmanto jebkuru pārlūkprogrammu, ko tava sirds vēlas.",
-        s3h1: "IEVADI TELPAS KODU JACKBOX.UNO VIETNĒ",
+        s2t2: "Lai pievienotos, katrs spēlētājs, izmantojot tālruni vai planšetdatoru, dodas uz vietni jackbox.lv, un izmanto jebkuru pārlūkprogrammu, ko tava sirds vēlas.",
+        s3h1: "IEVADI TELPAS KODU JACKBOX.LV VIETNĒ",
         s3t1: "Kad jau esi tur, ierīcē ievadi četru burtu telpas kodu.",
         s3t2: "Pēc tam ievadi vārdu, ko velies izmantot spēlē. Nospiedi pogu SPĒLET, un tu būsi jau tur!",
         s3t3: "The Jackbox Party Pack 9 var arī pieslēgties caura tālruņa kameru pavēršot uz kvadrātkodu lobijā un pēc tam sekojot parādītajam URL adreses nosaukumam.",
@@ -398,6 +427,20 @@ const langArr = {
         a3: "Atvainojiet, bet pašlaik mēs tulkojam Steam versiju.",
         q4: "Es atradu kļūdu vienā no tulkojumiem. Kur es varu par to ziņot?",
         a4: "<a href=\"https://discord.gg/TNK3wsHHUW\">Discord serverā</a> <span class=\"discord\">🔹︙mistakes</span> kanalā. <br> Ja iespējams, neaizmirsti par detaļām. Tas atvieglo problēmas atrašanu.",
+      
+        legalinfo: 'Juridiskā informācija',
+        l1p: 'Mēs (turpmāk saukti par JBU) cenšamies radīt augstas kvalitātes tulkojumus The Jackbox Party Pack franšīzēm (turpmāk sauktu par spēli), lai jūs varētu baudīt un izmantot ērtībā. Mūsu mērķis ir padarīt šīs spēles pieejamas visiem, kuri nerunā oriģinālā Jackbox Games valodā (turpmāk sauktu par izstrādātāju). Tomēr mēs vēlamies atklāti un godīgi izteikt savu atbrīvojumu un lietošanas noteikumus attiecībā uz mūsu tulkojumiem.',
+        l2h: 'Neoficiāli Tulkojumi',
+        l2p: 'JBU nav oficiāls spēles izstrādātāju pārstāvis un mums nav viņu atļaujas tulkojumiem. Mūsu tulkojumi ir dalībnieku radošs centiens un balstīti uz viņu prasmēm un zināšanām. Lūdzu, atcerieties, ka mums nav nekāda oficiāla statusa attiecībā uz šīm spēlēm.',
+        l3h: 'Nesniegti Kļūdas',
+        l3p: 'Tulkojuma un pielāgošanas procesā var rasties kļūdas vai nesakritības. Mēs veicam visus iespējamos pasākumus, lai nodrošinātu mūsu tulkojumu kvalitāti, bet nevaram garantēt to bezkļūdainu precizitāti. Lūdzu, saprotiet, ka var rasties daži problēmas.',
+        l4h: 'Pirātisms',
+        l4p: 'Mēs stingri nosodām spēļu pirātisku izplatīšanu. Mūsu tulkojumi ir paredzēti tikai tiem lietotājiem, kuriem ir oriģinālas spēļu kopijas. Lūdzu, ievērojiet likumu un cieniet spēļu izstrādātāju intelektuālo īpašumu.',
+        l5h: 'Atjauninājumi',
+        l5p: 'Mūsu komanda var periodiski atjaunināt tulkojumus, lai uzlabotu kvalitāti vai novērstu kļūdas. Mēs neuzņemamies atbalstīt vecās tulkojumu versijas.',
+        l6h: 'Izmantojiet uz savu risku',
+        l6p: 'Izmantojot mūsu tulkojumus, jūs to darāt uz savu risku. Riski ietver saderību un stabilitāti, legalitāti, atjauninājumus un atbalstu. Mēs neesam atbildīgi par jebkādiem bojājumiem, kas var rasties, izmantojot mūsu tulkojumus.',
+        l7p: 'Mēs ceram, ka mūsu centieni palīdzēs jums baudīt spēles savā dzimtajā valodā, bet lūdzam jūs ievērot iepriekš minētos noteikumus un saprast, ka mēs neesam spēles izstrādātāju oficiālie pārstāvji. Paldies par jūsu atbalstu un sapratni.'      
       },
     lt: {
       lang: 'Lietuvių',
@@ -448,7 +491,7 @@ const langArr = {
         q1: "Kodėl mano ekranas užtemsta įrašius vertimus?",
         a1: "Jeigu po vertimų įdiegimo ekranas tampa juodas, tai reiškia, kad jūsų versija yra suklastota (piratinė). Suklastotos versijos dažnai yra pasenusios ir neturi tokios pačios failų struktūros kaip dabartinės versijos. Mes galime tik paskatinti jus įsigyti legalią versiją.",
         q2: "Noriu žaisti. Kur gauti žaidimo (kambario) kodą?",
-        a2: "<p>Yra du būdai:</p><ul><li><strong>pradžiai</strong> – įsigykite žaidimą naudodami steam platformą, įrašykite <a href=\"ndex.html#games\">mūsų vertimą</a> , o tada tęskite naudodami <a href=\"/manual.html\">instrukcijas</a>.<!--Jei šiuo metu neturite su kuo žaisti <a href=\"finder.html\">here</a>.--></li><li><!--<a href=\"finder.html\">--><strong>visada galite prisijungti prie kitų žmonių sukurtų žaidimų kambarių</strong><!--</a>--> — nepamirškite, kad jūs NEPRIVALOTE pirkti žaidimo norint tik dalyvauti juose, tiesiog įveskite žinomą kambario kodą puslapyje <a href=\"https://jackbox.tv\">jackbox.tv</a>, ir iškart dalyvaukite to kambario žaidimo sesijoje.</li></ul><p>Ir dar kartelį: tik žmogus sukuriantis žaidimo kambarį (žaidimo vedėjas) privalo turėti mokamą žaidimo licenziją.<br>Vedėjas ar vedėja sukūrus žaidimo kambarį, prisijungia prie jo naudodami savo naršyklę (telefonais, planšetėmis arba kompiuteriais) per<a href=\"https://jackbox.uno\">jackbox.TV</a>, nieko papildomo įdiegti nereikia.</p>",
+        a2: "<p>Yra du būdai:</p><ul><li><strong>pradžiai</strong> – įsigykite žaidimą naudodami steam platformą, įrašykite <a href=\"ndex.html#games\">mūsų vertimą</a> , o tada tęskite naudodami <a href=\"/manual.html\">instrukcijas</a>.<!--Jei šiuo metu neturite su kuo žaisti <a href=\"finder.html\">here</a>.--></li><li><!--<a href=\"finder.html\">--><strong>visada galite prisijungti prie kitų žmonių sukurtų žaidimų kambarių</strong><!--</a>--> — nepamirškite, kad jūs NEPRIVALOTE pirkti žaidimo norint tik dalyvauti juose, tiesiog įveskite žinomą kambario kodą puslapyje <a href=\"https://jackbox.tv\">jackbox.tv</a>, ir iškart dalyvaukite to kambario žaidimo sesijoje.</li></ul><p>Ir dar kartelį: tik žmogus sukuriantis žaidimo kambarį (žaidimo vedėjas) privalo turėti mokamą žaidimo licenziją.<br>Vedėjas ar vedėja sukūrus žaidimo kambarį, prisijungia prie jo naudodami savo naršyklę (telefonais, planšetėmis arba kompiuteriais) per<a href=\"https://jackbox.tv\">jackbox.TV</a>, nieko papildomo įdiegti nereikia.</p>",
         q3: "Aš pirkau Party Pack per Epic Games Parduotuvę, kaip galėčiau įrašyti vertimus?",
         a3: "Atsiprašome, bet šiuo metu darome vertimus tik Steam platformai.",
         q4: "Radau klaidą viename iš vertimų, kur man apie tai pranešti?",
@@ -461,7 +504,7 @@ const langArr = {
         s1t3: "Atminkite, Jackbox produktą privalo turėti tik vienas žmogus, kuris dažniausiai yra traktuojamas vedėju.",
         s2h1: "ĮJUNKITE ŽAIDIMĄ IR GRIEBKITE SAVO MOBILIUOSIUS",
         s2t1: "Kai išsirinksite ir paleisite žaidimą, kurį norite žaisti, pamatysite keturių raidžių kambario kodą..",
-        s2t2: "Norėdami prisijungti, kiekvienas žaidėjas naudoja savo telefoną arba planšetinį kompiuterį ir eina į svetainę jackbox.uno, tada pasirenka kalbą, kuria žaisite.",
+        s2t2: "Norėdami prisijungti, kiekvienas žaidėjas naudoja savo telefoną arba planšetinį kompiuterį ir eina į svetainę jackbox.tv, kuria žaisite.",
         s3h1: "ĮVESKITE ŽAIDIMO KAMBARIO KODĄ PER JACKBOX.TV",
         s3t1: "Kai ten atsidursite, įveskite keturių raidžių kambario kodą savo mobiliuoju įrenginiu..",
         s3t2: "Tada įveskite bet kokį vardą, kurį norite naudoti žaidime. Paspauskite mygtuką ŽAISTI, ir turėtumėte būti prisijungę!",
@@ -476,12 +519,26 @@ const langArr = {
         oopsd: "Šiuo metu šiam žaidimui vertimo neturime.",
         pity: "GAILA",
         tjppstext: "Mūsų išleisti vertimai yra skirti „Steam“ platformai, „Windows“ operacinei sistemai (+ „Humble/Fanatical“). Kitos platformos („Epic Games“) kol kas nebuvo išbandytos.<br>Šiame puslapyje galite gauti modifikacijų, kurios prideda jūsų norimas kalbas prie Jackbox žaidimų. Atkreipkite dėmesį, kad kol kas ne visi žaidimai yra išversti, ir vertimai gali turįti klaidų ar netikslumų. Tačiau visada galite mums padėti prisijungdami prie mūsų „Discord“ serverio. <br>Vertimui atsisiųsti turite turėti žaidimą „Steam“ platformoje. Mes nepalaikome piratavimo ir neskiriame pagalbos jo atvejais!",
-      }
+        
+        legalinfo: 'Teisinė informacija',
+        l1p: 'Mes (toliau vadinami JBU) siekiame sukurti aukštos kokybės vertimus "The Jackbox Party Pack" franšizėms (toliau vadinamoms žaidimu) jūsų malonumui ir patogumui. Mūsų tikslas yra padaryti šiuos žaidimus prieinamus visiems, kurie nekalba Jackbox Games (toliau vadinama kūrėjais) žaidimams naudojamomis kalbomis. Tačiau norime atvirai ir sąžiningai pareikšti savo atsakomybės ribojimo ir vertimų naudojimo sąlygas.',
+        l2h: 'Neoficialūs vertimai',
+        l2p: 'JBU nėra oficialus žaidimo kūrėjų atstovas ir neturi jų leidimo daryti vertimus. Mūsų vertimai yra projekto dalyvių kūrybinės pastangos ir remiasi jų įgūdžiais ir žiniomis. Prašome nepamiršti, kad mes neturime oficialaus statuso šių žaidimų atžvilgiu.',
+        l3h: 'Nepalaikomos klaidos',
+        l3p: 'Vertimo ir adaptacijos proceso metu gali atsirasti klaidų ar nesutapimų. Mes dedame visas pastangas užtikrinti mūsų vertimų kokybę, tačiau negalime garantuoti jų tikslumo. Supraskite, kad gali kilti kai kurių problemų.',
+        l4h: 'Piratavimas',
+        l4p: 'Mes griežtai nepalaikome žaidimų platinimo nelegaliai. Mūsų vertimai skirti tik tiems vartotojams, kurie turi originalias žaidimų kopijas. Prašome laikytis įstatymų ir gerbti žaidimo kūrėjų intelektinę nuosavybę.',
+        l5h: 'Atnaujinimai',
+        l5p: 'Mūsų komanda gali periodiškai atnaujinti vertimus, siekdama pagerinti kokybę ar ištaisyti klaidas. Mes neįsipareigojame palaikyti pasenusių vertimų versijų.',
+        l6h: 'Naudojimas savo rizika',
+        l6p: 'Mūsų vertimus naudojate savo rizika. Rizikos gali apimti suderinamumą ir stabilumą, teisėtumą, atnaujinimus ir palaikymą. Mes neatsakome už jokius galimus nuostolius, atsirandančius naudojant mūsų vertimus.',
+        l7p: 'Tikimės, kad mūsų pastangos padės jums mėgautis žaidimais savo gimtąja kalba, bet prašome laikytis aukščiau paminėtų sąlygų ir suprasti, kad mes nesame oficialūs kūrėjų atstovai. Dėkojame už jūsų paramą ir supratimą.',
+      },
   };
 
   const carousel = document.querySelector(".carousel");
     
-    
+    const langEn = document.querySelectorAll("#lang-en");
     const langEe = document.querySelectorAll("#lang-ee");
     const langLv = document.querySelectorAll("#lang-lv");
     const langLt = document.querySelectorAll("#lang-lt");
@@ -506,12 +563,19 @@ const langArr = {
                 }
             }
         }
+        if (lang == "en") {
+          console.log(langArr[lang]['lang']);
+          if(document.getElementById("games")) {
+            document.getElementById("games").style.display = "none";
+          }
+      }
         if (lang == "ee") {
             console.log(langArr[lang]['lang']);
             if(document.getElementById("games")) {
               document.getElementById("games").innerHTML = `
                 ${gamessadDataee.map((game) => gamessad(game)).join("")}
               `;
+              document.getElementById("games").style.display = "flex";
             }
         }
         if (lang == "lv") {
@@ -539,6 +603,7 @@ const langArr = {
                 <h3>Mūsu tulkojums ir izlaists Windows OS balstīta Steam (+ Humble/Fanatical). Citas platformas (Epic Games) nav pārbaudītas. Lai lejupielādētu tulkojumu, spēlei jābūt instalētai pakalpojumā Steam. Mēs neatbalstām pirātismu un nepalīdzēsim.<br>Šajā lapā jūs varat iegūt modifikāciju, kas pievieno spēli kādā valodā. Lūdzu, ņemiet vērā, ka ne visas spēles ir tulkotas un tajās var būt kļūdas vai neprecizitātes. Tomēr jūs varat mums palīdzēt, ieejot discord serverī.</h3>
               </div>
               `;
+              document.getElementById("games").style.display = "flex";
             }
         }
         if (lang == "lt") {
@@ -547,10 +612,16 @@ const langArr = {
               document.getElementById("games").innerHTML = `
                 ${gamessadDatalt.map((game) => gamessad(game)).join("")}
               `;
+              document.getElementById("games").style.display = "flex";
             }
         }
     }
-    
+
+    if (langEn) {
+      langEn.forEach((element) => {
+        element.addEventListener("click", setLang.bind(null, "en"));
+      });
+    }
     if (langEe) {
       langEe.forEach((element) => {
         element.addEventListener("click", setLang.bind(null, "ee"));
@@ -695,8 +766,28 @@ if(carousel){
 
 const sv = document.getElementById("sv");
 var black = document.getElementById("black");
-const version = "1692545251.2";
+const version = "1695840767";
 console.log('URL: ' + window.location.pathname)
+document.addEventListener("DOMContentLoaded", function () {
+  const targetIds = ["jbu", "games", "faq"];
+
+  targetIds.forEach(function (targetId) {
+      const link = document.querySelector(`ul a[href="#${targetId}"]`);
+      if (link) {
+          link.addEventListener("click", function (event) {
+              event.preventDefault();
+              const targetSection = document.getElementById(targetId);
+              const offset = 40;
+              const targetPosition = targetSection.offsetTop - offset;
+              window.scrollTo({
+                  top: targetPosition,
+                  behavior: "smooth"
+              });
+          });
+      }
+  });
+});
+
 window.addEventListener("DOMContentLoaded", () => {
   if(sv){
     function siteversion() {

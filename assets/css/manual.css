@@ -1,18 +1,13 @@
 :root{
     --plimg: 30%;
-    --h1fs: 10vh;
     --h3fs: 1.5vh;
     --h2fs: 5vh;
     --pfs: 5vh;
-    --stpfs: 3vh;
     --button: #000;
     --i: rgba(0, 0, 0, 0.3);
     --ci: rgb(0, 0, 0);
     --h3fs: 15vh;
     --pfs: 5vh;
-    --h: 60vh;
-    --w: 50vh;
-    --spd: 8vh;
 }
 
 :root[data-theme='dark']{
@@ -21,53 +16,60 @@
     --ci: rgb(255, 255, 255);
 }
 
-.bulb {
-    height: 80%;
-    position: absolute;
-    right: 7vh;
-}
-
 .whi {
     background-color: var(--c3);
-    margin-top: -15vh;
+    margin-top: -5dvw;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+svg {
+    height: 1vh;
 }
 
 .ltrcmain {
     background-color: var(--c1);
     display: flex;
-    height: var(--h);
+    height: 30dvw;
+    width: 92dvw;
     align-items: center;
     justify-content: flex-start;
     align-content: center;
     flex-direction: row;
     flex-wrap: nowrap;
-    margin-top: -5vh;
-    margin-right: 0;
-    padding: var(--spd);
+    padding: 4dvw;
 }
 
-.ltrcmain div {
+.ltrcmain .texts {
     position: relative;
-    width: var(--w);
+    z-index: 1;
+    width: 50%;
 }
 
 .ltrcmain h1 {
-    position: relative;
     font-weight: 800;
-    font-size: var(--h1fs);
+    font-size: 6dvw;
     color: var(--c3);
     z-index: 2;
     padding: 0;
 }
 
 .ltrcmain p {
-    font-size: var(--stpfs);
+    font-size: 1.75dvw;
     color: var(--c3);
     font-weight: 600;
 }
 
+.ltrcmain img {
+    position: absolute;
+    z-index: 0;
+    top: 1dvw;
+    height: 40dvw;
+    right: 10dvw;
+}
+
 p {
-    font-size: var(--stpfs);
+    font-size: 1.75dvw;
     color: var(--c4);
     font-weight: 600;
 }
@@ -87,14 +89,14 @@ h2 {
     display: block;
     line-height: 1;
     font-weight: bold;
-    font-size: var(--h2fs);
+    font-size: 3dvw;
     color: var(--c3);
     background-color: var(--c1);
-    padding: 16px;
+    padding: 1dvw;
 }
 
 .p2 {
-    padding: 0px 32px 16px 16px;
+    padding: 0px 2dvw 1dvw 0;
     width: 50%;
 }
 
@@ -157,11 +159,11 @@ a.ast:hover, a.ast:visited {
 }
 
 .carousel-button-left {
-    left: -40px;
+    left: -2dvw;
 }
 
 .carousel-button-right {
-    right: -40px;
+    right: -2.5dvw;
 }
 
 svg {
@@ -170,23 +172,23 @@ svg {
 }
 
 .carousel-button svg {
-    width: 24px;
+    width: 2dvw;
     fill: var(--button);
 }
 
 .carousel-nav {
     display: flex;
     justify-content: center;
-    padding: 10px 0;
+    padding: 1dvw 0;
 }
 
 .carousel-indicator {
     border: 0;
     border-radius: 50%;
-    width: 6px;
-    height: 6px;
+    width: 0.75dvw;
+    height: 0.75dvw;
     background: var(--i);
-    margin: 0 12px;
+    margin: 0 1dvw;
     cursor: pointer;
 }
 
@@ -239,98 +241,6 @@ p[data-v-2ba6adc4] {
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     flex-direction: column;
-}
-
-@media screen and (max-width: 1375px) {
-    :root{
-        --h3fs: 12vh;
-        --h2fs: 4vh;
-        --pfs: 3vh;
-        --stpfs: 2vh;
-    }
-}
-
-@media screen and (max-width: 1300px) {
-    :root{
-        --h2fs: 4vh;
-    }
-}
-
-@media screen and (max-width: 1150px) {
-    :root{
-        --h2fs: 3vh;
-        --stpfs: 2vh;
-        --h: 50vh;
-    }
-}
-@media screen and (max-width: 1060px) {
-    :root{
-        --h3fs: 10vh;
-        --pfs: 2vh;
-    }
-}
-@media screen and (max-width: 1030px) {
-    :root{
-        --h2fs: 4vh;
-        --stpfs: 2vh;
-        --w: 100wvh;
-        --spd: 5.5vh;
-    }
-    .splittblock {
-        flex-direction: column;
-        align-items: center;
-    }
-    .carousel {
-        width: 80%;
-    }
-    .p2 {
-        width: 100%;
-    }
-    .bulb {
-        display: none;
-    }
-}
-@media screen and (max-width: 950px) {
-    :root{
-        --h: 45vh;
-        --h1fs: 8vh;
-    }
-}
-@media screen and (max-width: 900px) {
-    :root{
-        --h3fs: 10vh;
-        --h2fs: 4vh;
-        --stpfs: 2vh;
-    }
-    .ltrc3 div {
-        margin-top: 0px;
-        padding-top: 64px;
-        padding-bottom: 156px;
-    }
-}
-@media screen and (max-width: 780px) {
-    :root{
-        --h1fs: 6vh;
-        --spd: 4.5vh;
-    }
-}
-@media screen and (max-width: 600px) {
-    :root{
-        --h1fs: 5vh;
-    }
-}
-@media screen and (max-width: 560px) {
-    :root{
-        --h1fs: 4vh;
-        --h3fs: 84px;
-        --stpfs: 18px;
-        --h2fs: 32px;
-        --stpfs: 16px;
-        --spd: 0vh;
-    }
-    .ltrcmain, .whi {
-        padding: 1vh;
-    }
 }

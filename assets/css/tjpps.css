@@ -1,10 +1,9 @@
 :root {
     --h3fs: 24px;
-    --datefs: 12px;
-    --datespanfs: 8px;
-    --namept: 3px;
-    --namefs: 14px;
-    --pastgamewidth: 375px;
+    --datefs: 0.75dvw;
+    --datespanfs: 0.75dvw;
+    --namefs: 1dvw;
+    --pastgamewidth: 30dvw;
     --pfs: 24px;
 }
 
