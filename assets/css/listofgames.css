@@ -174,5 +174,5 @@
 
 /* TJPS */
 .image.TJPSTeeLV {
-  background-image: url(https://s3.amazonaws.com/cms-assets.jackbox.studio/TJPS_TKO_tile_9f1fed1b07.png);
+  background-image: url("../img/TJPSTeeKOLV.png")
 }

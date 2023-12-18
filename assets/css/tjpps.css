@@ -1,30 +1,30 @@
 :root {
-    --h3fs: 24px;
-    --datefs: 0.75dvw;
-    --datespanfs: 0.75dvw;
-    --namefs: 1dvw;
-    --pastgamewidth: 30dvw;
-    --pfs: 24px;
+    --h3fs: 2dvw;
+    --datefs: 1.5dvw;
+    --datespanfs: 1.5dvw;
+    --namefs: 2dvw;
+    --pastgamewidth: 70dvw;
+    --pfs: 2dvw;
 }
 
 .past-game {
     position: relative;
     display: inline-block;
-    margin: 0 auto 20px;
+    margin: 0 auto 2vh;
     min-width: var(--pastgamewidth);
     max-width: var(--pastgamewidth);
     transform: translateZ(0);
-    padding: 0px 16px 0px 0px;
+    padding: 0px 2vh 0px 0px;
     -webkit-transition: all 0.5s ease;
             transition: all 0.5s ease;
 }
 
 .past-game.home .card {
-    box-shadow: 0 0 12px 0 var(--shadows);
+    box-shadow: 0 0 1vh 0 var(--shadows);
 }
 
 .past-game.home .card:hover {
-    box-shadow: 0 5px 12px 0 var(--shadows);
+    box-shadow: 0 0.75vh 1vh 0 var(--shadows);
 }
 .past-game.managing .new,
 .past-game.managing .items,
@@ -53,8 +53,8 @@
     display: block;
     width: 100%;
     background: #fff;
-    border: 4px solid #fff;
-    border-radius: 14px;
+    border: 0.5vh solid #fff;
+    border-radius: 2vh;
     box-shadow: 0 5px 0 0 #0e167d;
     overflow: hidden;
     font-weight: bold;
@@ -63,13 +63,13 @@
 }
 
 .card:hover {
-    box-shadow: 0 10px 0 0 #0e167d;
+    box-shadow: 0 1vh 0 0 #0e167d;
     transform: translateY(-2px);
 }
 
 p[data-v-2ba6adc5] {
     font-size: var(--pfs);
-    padding: 0px 20px 0px 20px;
+    padding: 0px 2vh 0px 2vh;
     -webkit-transition: all 0.5s ease;
             transition: all 0.5s ease;
 }
@@ -96,7 +96,7 @@ p[data-v-2ba6adc5] {
     left: 50%;
     padding: 0 10px;
     background: #fff;
-    border-radius: 0 0 5px 5px;
+    border-radius: 0 0 0.5vh 0.5vh;
     color: var(--c4);
     font-size: 12px;
     white-space: nowrap;
@@ -108,8 +108,8 @@ p[data-v-2ba6adc5] {
 .cta svg {
     position: relative;
     top: 1px;
-    width: 11px;
-    height: 11px;
+    width: 1vh;
+    height: 1vh;
     margin-left: 1px;
     fill: #505050;
 }
@@ -120,7 +120,7 @@ svg:not(:root) {
 
 .content {
     width: 95%;
-    padding: 5px 8px 0;
+    padding: 1dvw 1dvw 0;
     overflow: hidden;
     display: flex;
     flex-direction: row;
@@ -207,11 +207,11 @@ svg:not(:root) {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100px;
-    padding: 55px 0 1px;
+    width: 14dvw;
+    padding: 8dvw 0 1px;
     background: rgba(0,0,0,.85);
     color: #fff;
-    font-size: 12px;
+    font-size: 1.5dvw;
     text-align: center;
     transform: translate(-50%, -50%) rotate(-45deg);
     transition: opacity .1s;
@@ -225,12 +225,12 @@ svg:not(:root) {
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-top: 10px;
-    margin-left: -4px;
-    width: 8px;
-    height: 8px;
+    margin-top: 1.5dvw;
+    margin-left: -0.5dvw;
+    width: 1dvw;
+    height: 1dvw;
     background: #cf2929;
-    border-radius: 4px;
+    border-radius: 50%;
 }
 
 .centerpls {
@@ -240,6 +240,17 @@ svg:not(:root) {
     -ms-user-select: none; /* IE 10+ */
 }
 
+@media screen and (min-width: 760px) {
+    :root {
+        --h3fs: 2dvw;
+        --datefs: 1.2dvw;
+        --datespanfs: 1.2dvw;
+        --namefs: 1.5dvw;
+        --pastgamewidth: 37dvw;
+        --pfs: 2dvw;
+    }
+}
+/*
 @media screen and (max-width: 990px) {
     .past-game {
         min-width: 345px;
@@ -277,12 +288,12 @@ svg:not(:root) {
         min-width: 325px;
         max-width: 355px;
     }
-}
+}*/
 @media screen and (max-width: 400px) {
-    .past-game {
+    /*.past-game {
         min-width: 295px;
         max-width: 325px;
-    }
+    }*/
 
     :root {
         --h3fs: 17px;

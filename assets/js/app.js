@@ -100,7 +100,7 @@ const gamesDatalv = [/*{
 
 const newgamesDatalv = [
   {
-    href: "",
+    href: "href=\"./games.html\"",
     image: "TJPSTeeLV",
     name: "Kre K.O.",
     span: "THE JACKBOX PARTY STARTER",
@@ -109,7 +109,7 @@ const newgamesDatalv = [
     view: ""
   },
   {
-    href: "",
+    href: "./games.html",
     image: "TeeKOGameLV",
     name: "Kre K.O.",
     span: "THE JACKBOX PARTY PACK 3",
@@ -568,6 +568,9 @@ const langArr = {
           if(document.getElementById("games")) {
             document.getElementById("games").style.display = "none";
           }
+          if(document.getElementById("gamesne")) {
+            document.getElementById("gamesne").style.display = "none";
+          }
       }
         if (lang == "ee") {
             console.log(langArr[lang]['lang']);
@@ -576,6 +579,12 @@ const langArr = {
                 ${gamessadDataee.map((game) => gamessad(game)).join("")}
               `;
               document.getElementById("games").style.display = "flex";
+            }
+            if(document.getElementById("gamesne")) {
+              document.getElementById("gamesne").innerHTML = `
+                ${gamessadDataee.map((game) => gamessad(game)).join("")}
+              `;
+              document.getElementById("gamesne").style.display = "flex";
             }
         }
         if (lang == "lv") {
@@ -592,10 +601,6 @@ const langArr = {
             if(document.getElementById("games")){
               document.getElementById("games").innerHTML = `
               <div class="control">
-                <div class="split2">
-                  <h1>Nesen tulkotās spēles</h1>
-                  <div class="split">${newgamesDatalv.map((game) => newgames(game)).join("")}</div>
-                </div>
                 <div class="split3">
                   <h1>Spēles</h1>
                   <div class="split">${gamesDatalv.map((game) => newgames(game)).join("")}</div>
@@ -605,6 +610,17 @@ const langArr = {
               `;
               document.getElementById("games").style.display = "flex";
             }
+            if(document.getElementById("gamesne")){
+              document.getElementById("gamesne").innerHTML = `
+              <div class="control">
+                <div class="split2">
+                  <h1>Nesen tulkotās spēles</h1>
+                  <div class="split">${newgamesDatalv.map((game) => newgames(game)).join("")}</div>
+                </div>
+              </div>
+              `;
+              document.getElementById("gamesne").style.display = "flex";
+            }
         }
         if (lang == "lt") {
             console.log(langArr[lang]['lang']);
@@ -613,6 +629,12 @@ const langArr = {
                 ${gamessadDatalt.map((game) => gamessad(game)).join("")}
               `;
               document.getElementById("games").style.display = "flex";
+            }
+            if(document.getElementById("gamesne")) {
+              document.getElementById("gamesne").innerHTML = `
+                ${gamessadDatalt.map((game) => gamessad(game)).join("")}
+              `;
+              document.getElementById("gamesne").style.display = "flex";
             }
         }
     }
@@ -766,7 +788,7 @@ if(carousel){
 
 const sv = document.getElementById("sv");
 var black = document.getElementById("black");
-const version = "1695840767";
+const version = "1702934070";
 console.log('URL: ' + window.location.pathname)
 document.addEventListener("DOMContentLoaded", function () {
   const targetIds = ["jbu", "games", "faq"];
@@ -788,6 +810,27 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+let clickdrop = false;
+var dropdownContent = document.querySelector('.dropdown-content');
+document.getElementById('lbtn').addEventListener('click', function() {
+  if (!clickdrop) {
+    dropdownContent.style.display = 'block';
+    clickdrop = true;
+  } else {
+    dropdownContent.style.display = 'none';
+    clickdrop = false;
+  }
+});
+document.addEventListener('click', function(event) {
+  var targetElement = event.target;
+  var lbtnElement = document.getElementById('lbtn');
+  
+  if (targetElement !== lbtnElement) {
+    dropdownContent.style.display = 'none';
+    clickdrop = false;
+  }
+});
+
 window.addEventListener("DOMContentLoaded", () => {
   if(sv){
     function siteversion() {
@@ -800,12 +843,27 @@ window.addEventListener("DOMContentLoaded", () => {
     if (window.innerWidth <= 320) {
       if (black) {
         black.style.display = "flex";
-        document.getElementById("jbu").style.display = "none";
-        document.getElementById("games").style.display = "none";
-        document.getElementById("faq").style.display = "none";
-        document.getElementById("ajg").style.display = "none";
-        document.querySelector("header").style.display = "none";
-      }
+        const elementsToHide = [
+          "header",
+          "footer",
+          "ltext",
+          "games",
+          "whi",
+          "ltrcmain",
+          "jbu",
+          "gamesne",
+          "faq",
+          "ajg"
+        ];
+    
+        elementsToHide.forEach((elementId) => {
+            const element = document.getElementById(elementId);
+            if (element) {
+                element.style.display = "none";
+            }
+        });
+    }
+    
     }
   }
   window.addEventListener('load', checkScreenWidth);
