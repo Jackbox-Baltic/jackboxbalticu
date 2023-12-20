@@ -34,7 +34,7 @@
     --qfaq: 3.3dvw;
     --afaq: 2.2dvw;
     --dvh: 30dvw;
-    --tool: 2dvw;
+    --tool: 1.25dvw;
 }
 
 body {
@@ -507,3 +507,23 @@ strong {
         --ajbuh1: 6dvw;
     }
 }
+
+#snowflakeContainer {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    display: none;
+  }
+  
+  .snowflake {
+    position: fixed;
+    background-color: white;
+    user-select: none;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10+ */
+    z-index: 1000;
+    pointer-events: none;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+  }

@@ -208,10 +208,10 @@ svg:not(:root) {
     top: 0;
     left: 0;
     width: 14dvw;
-    padding: 8dvw 0 1px;
+    padding: 6dvw 0 1px;
     background: rgba(0,0,0,.85);
     color: #fff;
-    font-size: 1.5dvw;
+    font-size: 1.25dvw;
     text-align: center;
     transform: translate(-50%, -50%) rotate(-45deg);
     transition: opacity .1s;
@@ -225,7 +225,7 @@ svg:not(:root) {
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-top: 1.5dvw;
+    margin-top: 1.05dvw;
     margin-left: -0.5dvw;
     width: 1dvw;
     height: 1dvw;
