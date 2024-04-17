@@ -95,14 +95,16 @@ async function setLang(lang) {
         console.log(langArr[lang]['lang']);
         if (window.location.pathname !== "/preload.html") {
             window.location.href = "/preload.html";
+        } else {
+            console.log('ok')
         }
-    } else {
+    } else if (lang !== "en") {
         if (window.location.pathname == "/preload.html") {
             if (window.location.pathname !== "../index.html") {
                 window.location.href = "../index.html";
             }
         }
-        setSpecialText();
+        if(text) { setSpecialText();}
     }
     if (lang == "ee") {
         console.log(langArr[lang]['lang']);
