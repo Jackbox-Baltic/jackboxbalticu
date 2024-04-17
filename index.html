@@ -15,104 +15,97 @@
 
     <meta name="application-name" content="JBU" />
     <meta name="mobile-web-app-capable" content="yes">
-    <meta name="supported-color-schemes" content="">
-    <meta name="color-scheme" content="#4254F4">
-    <meta name="theme-color" content="#4254F4">
-    <meta name="msapplication-TileColor" content="#0067FF" />
-
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
     <link rel="icon" href="/assets/img/favicon.ico" sizes="any">
-    <link rel="icon" type="image/png" href="/assets/img/favicon-32.png" sizes="32x32" />
-    <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
-
-    <script>
-      document.documentElement.className = document.documentElement.className.replace("no-js", "js")
-    </script>
+    <link rel="icon" type="image/png" href="/assets/img/logo.png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="/assets/img/logo.png">
 
     <link href="./assets/css/main.css" rel="stylesheet">
-
-    <link href="./assets/css/listofgames.css" rel="stylesheet">
-    <link href="./assets/css/tjpps.css" rel="stylesheet">
+    <link href="./assets/css/index.css" rel="stylesheet">
   </head>
   <body>
-    <noscript>Javascript must be enabled. Please enable Javascript in your browser settings and reload the page.</noscript>
-    <section id="jbu" class="jbu">
-      <div class="jbu control">
-        <h1>JACKBOX BALTIC UNITED</h1>
-        <h2 class="lang-jackboxbaltic"></h2>
-      </div>
-    </section>
     <header>
-      <ul>
-        <li><a href="#jbu" class="lang-home">HOME</a></li>
-        <li><a href="./games.html" class="lang-games">GAMES</a></li>
-        <li><a href="#faq" class="lang-faq">FAQ</a></li>
-        <li><a href="./manual.html" class="lang-manual">HOW TO PLAY</a></li>
-      </ul>
-      <div>
-        <div class="dropdown-content">
-            <a id="lang-en">English</a>
-            <a id="lang-ee">Eesti</a>
-            <a id="lang-lv">Latviešu</a>
-            <a id="lang-lt">Lietuvių</a>
+        <div class="hh">
+            <a href="index.html">
+                <img class="logo" src="assets/img/logo.png">
+            </a>
+            <p id="random-text"></p>
         </div>
-        <li class="centerli">
-            <a id="lbtn" class="toggle toggle-lang">🌐</a>
+        <li>
+            <a href="games/index.html" key="games"></a>
+            <a href="#faq" key="faq"></a>
+            <a href="manual.html" key="htp"></a>
+            <a>
+                <a id="lbtn" class="toggle toggle-lang">🌐</a>
+                <div class="dropdown-content">
+                    <a id="lang-ee">Eesti</a>
+                    <a id="lang-lv">Latviešu</a>
+                    <a id="lang-lt">Lietuvių</a>
+                </div>
+            </a>
         </li>
-      </div>
     </header>
-    <section id="gamesne" class="games"></section>
-    <section id="faq" class="faq">
-          <div class="control">
+    <section class="tf">
+        <div id="secc">
+            <p key="jbu_desc"></p>
+            <div id="bbau">
+                <a href="https://discord.gg/TNK3wsHHUW" target="_blank">
+                    <img src="./assets/img/ds.png" >
+                </a>
+                <a href="https://github.com/Jackbox-Baltic" target="_blank">
+                    <img src="./assets/img/git.png" >
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="faq">
+        <div class="ft" key="faqtext"></div>
+        <div>
             <h1 class="lang-faqtext sp"></h1>
-              <div id="accordion" class="accordion">
+            <div id="accordion" class="accordion">
                 <div class="accordion-item">
-                  <div class="accordion-item-header"><p class="qfaq lang-q1"></p></div>
-                  <div class="accordion-item-body">
-                    <div class="accordion-item-body-content"><p class="afaq lang-a1"></p></div>
-                  </div>
+                    <div class="accordion-item-header"><p class="qfaq" key="q1"></p></div>
+                    <div class="accordion-item-body">
+                        <div class="accordion-item-body-content"><p class="afaq" key="a1"></p></div>
+                    </div>
                 </div>
                 <div class="accordion-item">
-                  <div class="accordion-item-header"><p class="qfaq lang-q2"></p></div>
-                  <div class="accordion-item-body">
-                    <div class="accordion-item-body-content"><p class="afaq lang-a2"></p></div>
-                  </div>
+                    <div class="accordion-item-header"><p class="qfaq" key="q2"></p></div>
+                    <div class="accordion-item-body">
+                        <div class="accordion-item-body-content"><p class="afaq" key="a2"></p></div>
+                    </div>
                 </div>
                 <div class="accordion-item">
-                  <div class="accordion-item-header"><p class="qfaq lang-q3"></p></div>
-                  <div class="accordion-item-body">
-                    <div class="accordion-item-body-content"><p class="afaq lang-a3"></p></div>
-                  </div>
+                    <div class="accordion-item-header"><p class="qfaq" key="q3"></p></div>
+                    <div class="accordion-item-body">
+                        <div class="accordion-item-body-content"><p class="afaq" key="a3"></p></div>
+                    </div>
                 </div>
                 <div class="accordion-item">
-                  <div class="accordion-item-header"><p class="qfaq lang-q4"></p></div>
-                  <div class="accordion-item-body">
-                    <div class="accordion-item-body-content"><p class="afaq lang-a4"></p></div>
-                  </div>
+                    <div class="accordion-item-header"><p class="qfaq" key="q4"></p></div>
+                    <div class="accordion-item-body">
+                        <div class="accordion-item-body-content"><p class="afaq" key="a4"></p></div>
+                    </div>
                 </div>
-              </div>
-          </div>
+            </div>
+        </div>
     </section>
-    <section id="ajg">
-          <div class="ajg control">
-            <h2 class="lang-aboutjgd"></h2>
-            <h1 class="lang-aboutjg"></h1>
-          </div>
-    </section>
-    <section id="black">
-      <img src="./assets/img/jackboxgames.png">
-      <h1>Jackbox Baltic United</h1>
+    <section id="parjb">
+        <div class="ft" key="aboutjg"></div>
+        <div class="t">
+            <div class="hoz">
+                <img src="assets/img/jackboxgames.png">
+                <p key="aboutjgd"></p>
+            </div>
+        </div>
     </section>
     <footer>
-      <li><a href="./legal.html" class="lang-legalinfo" target="_blank">Legal Information</a></li>
-      <p class="tooltiptext">This site is not affiliated with Jackbox Games. Jackbox Games and the Jackbox Games logos are registered trademarks of Jackbox Games, Inc. All logos, images and videos displayed on this site may be trademarks of Jackbox Games, Inc. All other trademarks and logos are the property of their respective owners.</p>
+        <p class="left">This site is not affiliated with Jackbox Games. Jackbox Games and the Jackbox Games logos are registered trademarks of Jackbox Games, Inc. All logos, images and videos displayed on this site may be trademarks of Jackbox Games, Inc. All other trademarks and logos are the property of their respective owners.</p>
+        <a href="legal.html" key="legalinfo"></a>
     </footer>
-    <div id="snowflakeContainer" style="display: block;">
-      <span class="snowflake"></span>
-    </div>
-    <script src="./assets/js/snow.js"></script>
+    <div class="ton2b"></div>
     <script src="./assets/js/app.js"></script>
   </body>
 </html>

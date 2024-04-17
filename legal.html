@@ -15,84 +15,73 @@
 
     <meta name="application-name" content="JBU" />
     <meta name="mobile-web-app-capable" content="yes">
-    <meta name="supported-color-schemes" content="">
-    <meta name="color-scheme" content="#4254F4">
-    <meta name="theme-color" content="#4254F4">
-    <meta name="msapplication-TileColor" content="#0067FF" />
-
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
     <link rel="icon" href="/assets/img/favicon.ico" sizes="any">
-    <link rel="icon" type="image/png" href="/assets/img/favicon-32.png" sizes="32x32" />
-    <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
-
-    <script>
-      document.documentElement.className = document.documentElement.className.replace("no-js", "js")
-    </script>
+    <link rel="icon" type="image/png" href="/assets/img/logo.png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="/assets/img/logo.png">
 
     <link href="./assets/css/main.css" rel="stylesheet">
+    <link href="./assets/css/legal.css" rel="stylesheet">
   </head>
   <body>
-    <noscript>Javascript must be enabled. Please enable Javascript in your browser settings and reload the page.</noscript>
     <header>
-      <ul>
-        <li><a href="./index.html#jbu" class="lang-home">HOME</a></li>
-        <li><a href="./games.html" class="lang-games">GAMES</a></li>
-        <li><a href="./index.html#faq" class="lang-faq">FAQ</a></li>
-        <li><a href="./manual.html" class="lang-manual">HOW TO PLAY</a></li>
-      </ul>
-      <div>
-        <div class="dropdown-content">
-            <a id="lang-en">English</a>
-            <a id="lang-ee">Eesti</a>
-            <a id="lang-lv">Latviešu</a>
-            <a id="lang-lt">Lietuvių</a>
-        </div>
-        <li class="centerli">
-            <a id="lbtn" class="toggle toggle-lang">🌐</a>
+        <a href="index.html">
+            <img class="logo" src="assets/img/logo.png">
+        </a>
+        <li>
+            <a href="games/index.html" key="games"></a>
+            <a href="./index.html#faq" key="faq"></a>
+            <a href="manual.html" key="htp"></a>
+            <a>
+                <a id="lbtn" class="toggle toggle-lang">🌐</a>
+                <div class="dropdown-content">
+                    <a id="lang-ee">Eesti</a>
+                    <a id="lang-lv">Latviešu</a>
+                    <a id="lang-lt">Lietuvių</a>
+                </div>
+            </a>
         </li>
-      </div>
     </header>
-    <section id="ltext">
+    <section class="tf">
         <div>
-            <p class="lang-l1p"></p>
+            <div class="t">
+                <h2 key="legalinfo"></h1>
+                <div key="l1p"></div>
+            </div>
+            <div class="tt">
+                <div>
+                    <h1 key="l2h"></h1>
+                    <p key="l2p"></p>
+                </div>
+                <div>
+                    <h1 key="l3h"></h1>
+                    <p key="l3p"></p>
+                </div>
+            </div>
+            <div class="tt">
+                <div>
+                    <h1 key="l4h"></h1>
+                    <p key="l4p"></p>
+                </div>
+                <div>
+                    <h1 key="l5h"></h1>
+                    <p key="l5p"></p>
+                </div>
+            </div>
+            <div>
+                <h1 key="l6h"></h1>
+                <p key="l6p"></p>
+            </div>
+            <div key="l7p"></div>
         </div>
-        <div>
-            <h1 class="lang-l2h"></h1>
-            <p class="lang-l2p"></p>
-        </div>
-        <div>
-            <h1 class="lang-l3h"></h1>
-            <p class="lang-l3p"></p>
-        </div>
-        <div>
-            <h1 class="lang-l4h"></h1>
-            <p class="lang-l4p"></p>
-        </div>
-        <div>
-            <h1 class="lang-l5h"></h1>
-            <p class="lang-l5p"></p>
-        </div>
-        <div>
-            <h1 class="lang-l6h"></h1>
-            <p class="lang-l6p"></p>
-        </div>
-        <div>
-            <p class="lang-l7p"></p>
-        </div>
-    </section>
-    <section id="black">
-      <img src="./assets/img/jackboxgames.png">
-      <h1>Jackbox Baltic United</h1>
     </section>
     <footer>
-      <p class="tooltiptext">This site is not affiliated with Jackbox Games. Jackbox Games and the Jackbox Games logos are registered trademarks of Jackbox Games, Inc. All logos, images and videos displayed on this site may be trademarks of Jackbox Games, Inc. All other trademarks and logos are the property of their respective owners.</p>
+        <p class="left">This site is not affiliated with Jackbox Games. Jackbox Games and the Jackbox Games logos are registered trademarks of Jackbox Games, Inc. All logos, images and videos displayed on this site may be trademarks of Jackbox Games, Inc. All other trademarks and logos are the property of their respective owners.</p>
+        <a key="legalinfo"></a>
     </footer>
-    <div id="snowflakeContainer" style="display: block;">
-      <span class="snowflake"></span>
-    </div>
-    <script src="./assets/js/snow.js"></script>
+    <dl class="ton2b"></dl>
     <script src="./assets/js/app.js"></script>
   </body>
 </html>

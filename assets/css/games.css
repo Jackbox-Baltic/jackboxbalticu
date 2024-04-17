@@ -1,0 +1,90 @@
+section {
+    margin-top: 4.25dvw;
+    margin-bottom: 2dvw;
+
+    padding: var(--f0);
+    font-size: var(--f2);
+    animation: spa 1s ease-in-out forwards;
+}
+
+#gameslv {
+    margin-top: 6.25dvw;
+}
+
+#gamecard {
+    margin: var(--f1);
+    border-radius: var(--f0d5);
+
+    & #img {
+        position: relative;
+        border-radius: var(--f0d5);
+        width: 46dvw;
+        height: 20dvw;
+        background-position: center;
+        background-size: cover;
+    }
+
+    & .title {
+        position: absolute;
+        bottom: 0;
+        margin: var(--f1);
+    }
+}
+
+.flexer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.spliter {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+
+    & h3 {
+        font-size: var(--f0);
+        width: 50%;
+        padding: var(--f1);
+    }
+}
+
+.control {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content:space-between;
+    align-items: center;
+
+    padding: var(--f0);
+    background-image: url("../img/7.png");
+    background-position: bottom;
+    background-size: cover;
+    animation: spa 1s ease-in-out;
+    border-radius: var(--f0d5);
+    height: 40dvw;
+
+    & div {
+        text-align: center;
+        font-size: var(--f4);
+    }
+}
+
+h1 {
+    font-size: var(--f4);
+    text-align: center;
+    animation: spa 1s ease-in-out forwards;
+}
+
+.buton {
+    background-color: var(--c1);
+    margin: var(--f2);
+    padding: var(--f0d5);
+}

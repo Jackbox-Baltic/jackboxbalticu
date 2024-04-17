@@ -1,0 +1,63 @@
+.tf {
+    margin-top: 4.25dvw;
+    margin-bottom: 2dvw;
+}
+
+h2 {
+    font-size: var(--f4);
+    text-align: center;
+    animation: spa 1s ease-in-out forwards;
+}
+
+div {
+    padding: var(--f0);
+    font-size: var(--f2);
+    animation: spa 1s ease-in-out forwards;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: var(--f0);
+    text-align: center;
+
+    &.t {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+
+        padding: var(--f0);
+        background-image: url("../img/1005300-rolemodels.jpg");
+        background-position: bottom;
+        background-size: cover;
+        animation: spa 1s ease-in-out;
+        border-radius: var(--f0d5);
+        height: 40dvw;
+    }
+
+    & h1 {
+        font-size: var(--f3);
+        font-weight: 700;
+        text-align: center;
+    }
+    & p {
+        font-size: var(--f2);
+        width: 75%;
+    }
+    &.tt {
+        flex-direction: row;
+
+        & div {
+            width: 50%;
+        }
+        & p {
+            width: 100%;
+        }
+    }
+}

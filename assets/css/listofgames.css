@@ -1,32 +1,38 @@
 .image.tjpp {
-  background-image: url("../img/PP1_tile.jpg")
+  background-image: url("../img/tjpps/PP1_tile.jpg")
 }
 .image.tjpp2 {
-  background-image: url("../img/PP2_tile.jpg")
+  background-image: url("../img/tjpps/PP2_tile.jpg")
 }
 .image.tjpp3 {
-  background-image: url("../img/PP3_tile.jpg")
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%) center center / cover no-repeat, url("../img/tjpps/PP3_tile.jpg");
+}
+.image.tjpp3:hover {
+  background-image: url("../img/tjpps/PP3_tile.jpg")
 }
 .image.tjpp4 {
-  background-image: url("../img/PP4_tile.jpg")
+  background-image: url("../img/tjpps/PP4_tile.jpg")
 }
 .image.tjpp5 {
-  background-image: url("../img/PP5_tile.jpg")
+  background-image: url("../img/tjpps/PP5_tile.jpg")
 }
 .image.tjpp6 {
-  background-image: url("../img/WebsiteTile-2.jpg")
+  background-image: url("../img/tjpps/WebsiteTile-2.jpg")
 }
 .image.tjpp7 {
-  background-image: url("../img/website-title-1.jpg")
+  background-image: url("../img/tjpps/website-title-1.jpg")
 }
 .image.tjpp8 {
-  background-image: url("../img/PP8_Nintendo_FirstLook-1Artboard-1.jpg")
+  background-image: url("../img/tjpps/PP8_Nintendo_FirstLook-1Artboard-1.jpg")
 }
 .image.tjps {
-  background-image: url("../img/JBPS_635x291px.jpg")
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%) center center / cover no-repeat, url("../img/tjpps/JBPS_635x291px.jpg");
+}
+.image.tjps:hover {
+  background-image: url("../img/tjpps/JBPS_635x291px.jpg")
 }
 .image.tjpp9 {
-  background-image: url("../img/pp9temptile.jpg")
+  background-image: url("../img/tjpps/pp9temptile.jpg")
 }
 
 /* TJPP */
