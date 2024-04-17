@@ -3,7 +3,8 @@
     "home": "home",
     "games": "games",
     "faq": "faq",
-    "htp": "how to play"
+    "htp": "how to play",
+    "havefun": "What language do you want to have fun in?"
   },
   "ee": {
     "lang": "ee",
@@ -14,6 +15,7 @@
     "jbu_desc": "<strong>Jackbox Baltic United</strong> on veebileht, kuhu me laeme üles mitteametlikud eesti-, läti- ja leedukeelsed tõlked Jackbox Games mängudele, tuntud kui Jackbox Party Pack'i loojad. Oleme alles oma tõlketeekonna alguses, seega võid meile appi tulla meie Discordi serveris!",
     "ds": "DISCORDI SERVER",
     "nttext": "Hetkel meil ei ole tõlkeid, aga võid meie tõlketiimiga ühineda!",
+    "havefun": "Lõbutsege!",
 
     "aboutjg": "Mis on Jackbox Games",
     "aboutjgd": "<strong>Jackbox Games</strong> on Chicagos asuv väike mängutegijate stuudio. Nende kuulsaim frantsiis - Sa ei tea mitte Essugi - on avaldatud alates 1995. aastast, mille all oli ka kunagi telesaade. 2013. aastal, olles seni olnud osa firmast Jellyvision, registreeris Jackbox Games ennast eraldi firmaks. Lisaks Jackbox Party Pack frantsiisile on stuudio mitmeid erinevaid mänge avaldanud, nende seas Kavalusekott, Luiskard ja Mõrvaviktoriinipralle.",
@@ -69,6 +71,7 @@
     "htp": "kā spēlēt?",
     "jbu_desc": "<strong>Jackbox Baltic United</strong> ir neatkarīga iniciatīva, kas apvieno mīlestību pret Jackbox Games ballīšu spēlēm un vēlmi nodrošināt igauņu, latviešu un lietuviešu izcelsmes iespēju izbaudīt to pašu jautrību savā dzimtajā valodā! Mēs esam neliela komanda ar dažādu pieredzi, kas strādājam pie daudzu Jackbox Games spēļu izlaidumu tulkošanas, kodēšanas un lokalizēšanas.",
     "ds": "DISCORD SERVERIS",
+    "havefun": "Izklaidējies!",
 
     "aboutjg": "Par Jackbox Games",
     "aboutjgd": "<strong>Jackbox Games</strong> ir neliela spēļu ražošanas studija no Čikāgas (Ilinoisas štatā). Slavenākā franšīze - You Don't Know Jack - tika izlaista kopš 1995. gada un pat pastāvēja kā TV šova. Būt par daļu no Jellyvision, 2013. gadā tas atdalījās un tika nosaukts par Jackbox Games. Līdzās The Jackbox Party Pack franšīzei tiek izlaistas dažādas spēles, piemēram - Quiplash, Fibbage, Trivia Murder Party.",
@@ -125,6 +128,7 @@
     "aboutus": "apie muss",
     "ds": "DISCORDO SERVERIS",
     "nttext": "Šiuo metu neturime jokių vertimų, bet galite prisijungti prie mūsų vertimų komandos!",
+    "havefun": "Gero laiko!",
 
     "aboutjg": "Apie Jackbox Games",
     "aboutjgd": "<strong>Jackbox Games</strong> yra nedidelė žaidimų kūrimo studija iš Čikagos (Ilinojaus). Žinomiausia jų prekės ženklų serija - \"You Don\"t Know Jack\" - yra leidžiama nuo 1995 metų ir net egzistavo kaip televizijos šou. Būdama Jellyvision dalis, įmonė 2013 metais atsiskyrė ir buvo pavadinta \"Jackbox Games\". Be \"Jackbox Party Pack\" prekės ženklo, yra leidžiami ir kiti įvairūs žaidimai, pavyzdžiui - \"Quiplash\", \"Fibbage\", \"Trivia Murder Party\".",

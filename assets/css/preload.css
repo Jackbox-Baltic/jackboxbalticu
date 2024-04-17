@@ -15,3 +15,140 @@
     scroll-behavior: auto;
     font-weight: 600;
 }
+
+body {
+    animation: tann 3s ease-in-out forwards;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    height: 99dvh;
+}
+
+#logojbu {
+    position: absolute;
+    opacity: 1;
+    font-size: 8dvw;
+    font-weight: 900;
+    text-align: center;
+    animation: tann2 5s ease-in-out forwards, tann3 1s 5s ease-in-out forwards;
+}
+
+#qwelcome {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    right: 15dvw;
+    height: 30dvw;
+    animation: spa .5s ease-in-out;
+}
+
+#whatlang {
+    font-size: 3dvw;
+    width: 23dvw;
+    text-align: center;
+}
+
+.listcont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.listcont li {
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    animation: fade .5s forwards;
+}
+
+.listcont li a {
+    cursor: pointer;
+}
+
+.listcont a {
+    position: relative;
+    display: block;
+    width: 20dvw;
+    margin: 5px auto;
+    font-size: 2.5dvw;
+    color: var(--c3);
+    text-align: left;
+
+    background-color: #1f2881;
+}
+
+.listcont li:nth-child(1) {
+    animation-delay: .05s
+}
+
+.listcont li:nth-child(2) {
+    animation-delay: .15s
+}
+
+.listcont li:nth-child(3) {
+    animation-delay: .2s
+}
+
+#lang-ee,#lang-lv,#lang-lt{
+    padding: 1dvw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+
+    &:hover {
+        background-color: #3b4df4;
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes tann {
+    from {
+        background-color: #000;
+    }
+    to {
+        background-color: #3241ce;
+    }
+}
+
+@keyframes tann2 {
+    0% {
+        scale: 0;
+    }
+    80% {
+        scale: 0.8;
+    }
+    100% {
+        scale: 1;
+    }
+}
+
+@keyframes tann3 {
+    0% {
+        scale: 1;
+        transform: translateX(0);
+    }
+    100% {
+        scale: 0.6;
+        transform: translateX(-40dvw);
+    }
+}

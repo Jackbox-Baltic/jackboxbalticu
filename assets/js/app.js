@@ -1,9 +1,32 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const version = "1713392033";
+    const version = "1713396082";
     console.log("Version: " + version);
     console.log('URL: ' + window.location.pathname)
     setLang();
-    setSpecialText();
+    if(text) { setSpecialText();}
+    if (window.location.pathname == "/preload.html") {
+        function setLangText(langId, langText) {
+            const langElement = document.getElementById(langId);
+            if (langElement) {
+                langElement.addEventListener("mouseover", function () {
+                    document.getElementById("whatlang").textContent = langText;
+                });
+                langElement.addEventListener("mouseleave", function () {
+                    document.getElementById("whatlang").textContent = "What language do you want to have fun in?";
+                });
+                langElement.addEventListener("click", function () {
+                    window.location.href = "../index.html";
+                });
+            }
+        }
+        setLangText("lang-ee", "Lõbutsege!");
+        setLangText("lang-lv", "Izklaidējies!");
+        setLangText("lang-lt", "Gero laiko!");
+        
+        setTimeout(() => {
+            document.getElementById("qwelcome").style.display = "flex";
+        }, 6000)
+    }
 
     const targetIds = ["jbu", "games", "faq"];
 
@@ -70,6 +93,16 @@ async function setLang(lang) {
     }
     if (lang == "en") {
         console.log(langArr[lang]['lang']);
+        if (window.location.pathname !== "/preload.html") {
+            window.location.href = "/preload.html";
+        }
+    } else {
+        if (window.location.pathname == "/preload.html") {
+            if (window.location.pathname !== "../index.html") {
+                window.location.href = "../index.html";
+            }
+        }
+        setSpecialText();
     }
     if (lang == "ee") {
         console.log(langArr[lang]['lang']);
@@ -116,7 +149,6 @@ async function setLang(lang) {
             seclv.style.display = "none";
         }
     }
-    setSpecialText();
 }
 var lang = (window.hasOwnProperty("localStorage") && window.localStorage.getItem("lang", lang)) || "en";
 setLang(lang);
@@ -134,24 +166,26 @@ langAEL.forEach((lang) => {
 // LANGUAGE DROP-SELECTION
 let clickdrop = false;
 var dropdownContent = document.querySelector('.dropdown-content');
-document.getElementById('lbtn').addEventListener('click', function() {
-  if (!clickdrop) {
-    dropdownContent.style.display = 'block';
-    clickdrop = true;
-  } else {
-    dropdownContent.style.display = 'none';
-    clickdrop = false;
-  }
-});
-document.addEventListener('click', function(event) {
-  var targetElement = event.target;
-  var lbtnElement = document.getElementById('lbtn');
-  
-  if (targetElement !== lbtnElement) {
-    dropdownContent.style.display = 'none';
-    clickdrop = false;
-  }
-});
+if(document.getElementById('lbtn')) {
+    document.getElementById('lbtn').addEventListener('click', function() {
+      if (!clickdrop) {
+        dropdownContent.style.display = 'block';
+        clickdrop = true;
+      } else {
+        dropdownContent.style.display = 'none';
+        clickdrop = false;
+      }
+    });
+    document.addEventListener('click', function(event) {
+        var targetElement = event.target;
+        var lbtnElement = document.getElementById('lbtn');
+        
+        if (targetElement !== lbtnElement) {
+          dropdownContent.style.display = 'none';
+          clickdrop = false;
+        }
+      });
+}
 
 // FAQ
 const accordion = document.getElementById("accordion");
@@ -278,9 +312,9 @@ if(carousel){
 }
 
 // BINJPIPE
+const text = document.getElementById('random-text');
 function setSpecialText() {
     var lang = window.localStorage.getItem("lang", lang);
-    const text = document.getElementById('random-text');
     let specialTexts = {
         "14-02": {
             lt: "Su Valentino diena!",
