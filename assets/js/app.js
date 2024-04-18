@@ -99,8 +99,8 @@ async function setLang(lang) {
         }, 6000)
     }
     if (lang !== "en") {
-        if (window.location.pathname === "/preload.html" && window.location.pathname === "/preload" ) {
-            if (window.location.pathname !== "/index.html" && window.location.pathname !== "/") {
+        if (window.location.pathname === "/preload.html" || window.location.pathname === "/preload" ) {
+            if (window.location.pathname !== "/index.html" || window.location.pathname !== "/") {
                 window.location.href = "../index.html";
             }
         }
