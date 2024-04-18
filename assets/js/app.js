@@ -54,6 +54,7 @@ var s3img1E = document.getElementById("s3img1");
 var s3img2E = document.getElementById("s3img2");
 var s3img3E = document.getElementById("s3img3");
 var s4imgE = document.getElementById("s4img");
+let isPreloaded = false;
 
 async function setLang(lang) {
     const langArr = await loadJSON('../assets/json/langArr.json');
@@ -70,7 +71,12 @@ async function setLang(lang) {
     }
     if (lang == "en") {
         console.log(langArr[lang]['lang']);
-        window.location.assign("/preload.html")
+        if (!isPreloaded) {
+            isPreloaded = true;
+            window.location.assign("/preload.html")
+        } else {
+            console.log('Hey, are you alright?')
+        }
         setTimeout(() => {
             document.getElementById("qwelcome").style.display = "flex";
 
