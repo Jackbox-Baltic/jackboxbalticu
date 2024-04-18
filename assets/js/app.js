@@ -71,7 +71,7 @@ async function setLang(lang) {
     }
     if (lang == "en") {
         console.log(langArr[lang]['lang']);
-        if (window.location.pathname !== "/preload.html") {
+        if (window.location.pathname !== "/preload.html" || window.location.pathname !== "/preload" ) {
             if (!testpreload) {
                 testpreload = true;
                 window.location.href = "/preload.html";
