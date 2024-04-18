@@ -1,32 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const version = "1713396082";
+    const version = "1713446499";
     console.log("Version: " + version);
     console.log('URL: ' + window.location.pathname)
     setLang();
     if(text) { setSpecialText();}
-    if (window.location.pathname == "/preload.html") {
-        function setLangText(langId, langText) {
-            const langElement = document.getElementById(langId);
-            if (langElement) {
-                langElement.addEventListener("mouseover", function () {
-                    document.getElementById("whatlang").textContent = langText;
-                });
-                langElement.addEventListener("mouseleave", function () {
-                    document.getElementById("whatlang").textContent = "What language do you want to have fun in?";
-                });
-                langElement.addEventListener("click", function () {
-                    window.location.href = "../index.html";
-                });
-            }
-        }
-        setLangText("lang-ee", "Lõbutsege!");
-        setLangText("lang-lv", "Izklaidējies!");
-        setLangText("lang-lt", "Gero laiko!");
-        
-        setTimeout(() => {
-            document.getElementById("qwelcome").style.display = "flex";
-        }, 6000)
-    }
 
     const targetIds = ["jbu", "games", "faq"];
 
@@ -77,6 +54,7 @@ var s3img1E = document.getElementById("s3img1");
 var s3img2E = document.getElementById("s3img2");
 var s3img3E = document.getElementById("s3img3");
 var s4imgE = document.getElementById("s4img");
+var testpreload = false;
 
 async function setLang(lang) {
     const langArr = await loadJSON('../assets/json/langArr.json');
@@ -94,9 +72,33 @@ async function setLang(lang) {
     if (lang == "en") {
         console.log(langArr[lang]['lang']);
         if (window.location.pathname !== "/preload.html") {
-            window.location.href = "/preload.html";
+            if (!testpreload) {
+                testpreload = true;
+                window.location.href = "/preload.html";
+            }
         } else {
-            console.log('ok')
+            setTimeout(() => {
+                document.getElementById("qwelcome").style.display = "flex";
+
+                function setLangText(langId, langText) {
+                    const langElement = document.getElementById(langId);
+                    if (langElement) {
+                        langElement.addEventListener("mouseover", function () {
+                            document.getElementById("whatlang").textContent = langText;
+                        });
+                        langElement.addEventListener("mouseleave", function () {
+                            document.getElementById("whatlang").textContent = "What language do you want to have fun in?";
+                        });
+                        langElement.addEventListener("click", function () {
+                            console.log(langId);
+                            setLang(langId);
+                        });
+                    }
+                }
+                setLangText("ee", "Lõbutsege!");
+                setLangText("lv", "Izklaidējies!");
+                setLangText("lt", "Gero laiko!");
+            }, 6000)
         }
     } else if (lang !== "en") {
         if (window.location.pathname == "/preload.html") {

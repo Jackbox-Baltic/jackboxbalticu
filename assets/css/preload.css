@@ -71,6 +71,17 @@ body {
 
 .listcont li a {
     cursor: pointer;
+    padding: 1dvw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+
+    &:hover {
+        background-color: #3b4df4;
+    }
 }
 
 .listcont a {
@@ -95,20 +106,6 @@ body {
 
 .listcont li:nth-child(3) {
     animation-delay: .2s
-}
-
-#lang-ee,#lang-lv,#lang-lt{
-    padding: 1dvw;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: center;
-    justify-content: space-between;
-    align-items: center;
-
-    &:hover {
-        background-color: #3b4df4;
-    }
 }
 
 @keyframes fade {
