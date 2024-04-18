@@ -97,7 +97,8 @@ async function setLang(lang) {
             setLangText("lv", "Izklaidējies!");
             setLangText("lt", "Gero laiko!");
         }, 6000)
-    } else if (lang !== "en") {
+    }
+    if (lang !== "en") {
         if (window.location.pathname === "/preload.html" && window.location.pathname === "/preload" ) {
             if (window.location.pathname !== "/index.html" && window.location.pathname !== "/") {
                 window.location.href = "../index.html";
