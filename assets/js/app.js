@@ -70,35 +70,32 @@ async function setLang(lang) {
     }
     if (lang == "en") {
         console.log(langArr[lang]['lang']);
-        if (window.location.pathname !== "/preload.html" || window.location.pathname !== "/preload" ) {
-            window.location.href = "/preload.html";
-        } else if (window.location.pathname == "/preload.html" || window.location.pathname == "/preload" ) {
-            setTimeout(() => {
-                document.getElementById("qwelcome").style.display = "flex";
+        window.location.assign("/preload.html")
+        setTimeout(() => {
+            document.getElementById("qwelcome").style.display = "flex";
 
-                function setLangText(langId, langText) {
-                    const langElement = document.getElementById(langId);
-                    if (langElement) {
-                        langElement.addEventListener("mouseover", function () {
-                            document.getElementById("whatlang").textContent = langText;
-                        });
-                        langElement.addEventListener("mouseleave", function () {
-                            document.getElementById("whatlang").textContent = "What language do you want to have fun in?";
-                        });
-                        langElement.addEventListener("click", function () {
-                            console.log(langId);
-                            setLang(langId);
-                        });
-                    }
+            function setLangText(langId, langText) {
+                const langElement = document.getElementById(langId);
+                if (langElement) {
+                    langElement.addEventListener("mouseover", function () {
+                        document.getElementById("whatlang").textContent = langText;
+                    });
+                    langElement.addEventListener("mouseleave", function () {
+                        document.getElementById("whatlang").textContent = "What language do you want to have fun in?";
+                    });
+                    langElement.addEventListener("click", function () {
+                        console.log(langId);
+                        setLang(langId);
+                    });
                 }
-                setLangText("ee", "Lõbutsege!");
-                setLangText("lv", "Izklaidējies!");
-                setLangText("lt", "Gero laiko!");
-            }, 6000)
-        }
+            }
+            setLangText("ee", "Lõbutsege!");
+            setLangText("lv", "Izklaidējies!");
+            setLangText("lt", "Gero laiko!");
+        }, 6000)
     } else if (lang !== "en") {
-        if (window.location.pathname == "/preload.html" || window.location.pathname == "/preload" ) {
-            if (window.location.pathname !== "/index.html" || window.location.pathname !== "/") {
+        if (window.location.pathname == "/preload.html" && window.location.pathname == "/preload" ) {
+            if (window.location.pathname !== "/index.html" && window.location.pathname !== "/") {
                 window.location.href = "../index.html";
             }
         }
