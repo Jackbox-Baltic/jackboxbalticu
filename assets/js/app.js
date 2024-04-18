@@ -71,7 +71,7 @@ async function setLang(lang) {
     }
     if (lang == "en") {
         console.log(langArr[lang]['lang']);
-        if (window.location.pathname !== "/preload.html" || window.location.pathname !== "/preload" ) {
+        if (window.location.pathname !== "/preload.html" && window.location.pathname !== "/preload" ) {
             if (!testpreload) {
                 testpreload = true;
                 window.location.href = "/preload.html";
@@ -101,8 +101,8 @@ async function setLang(lang) {
             }, 6000)
         }
     } else if (lang !== "en") {
-        if (window.location.pathname == "/preload.html") {
-            if (window.location.pathname !== "../index.html") {
+        if (window.location.pathname == "/preload.html" || window.location.pathname !== "/preload" ) {
+            if (window.location.pathname !== "/index.html" || window.location.pathname !== "/") {
                 window.location.href = "../index.html";
             }
         }
