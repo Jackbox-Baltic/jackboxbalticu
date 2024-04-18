@@ -54,7 +54,6 @@ var s3img1E = document.getElementById("s3img1");
 var s3img2E = document.getElementById("s3img2");
 var s3img3E = document.getElementById("s3img3");
 var s4imgE = document.getElementById("s4img");
-var testpreload = false;
 
 async function setLang(lang) {
     const langArr = await loadJSON('../assets/json/langArr.json');
@@ -71,12 +70,9 @@ async function setLang(lang) {
     }
     if (lang == "en") {
         console.log(langArr[lang]['lang']);
-        if (window.location.pathname !== "/preload.html" && window.location.pathname !== "/preload" ) {
-            if (!testpreload) {
-                testpreload = true;
-                window.location.href = "/preload.html";
-            }
-        } else {
+        if (window.location.pathname !== "/preload.html" || window.location.pathname !== "/preload" ) {
+            window.location.href = "/preload.html";
+        } else if (window.location.pathname == "/preload.html" || window.location.pathname == "/preload" ) {
             setTimeout(() => {
                 document.getElementById("qwelcome").style.display = "flex";
 
@@ -101,12 +97,11 @@ async function setLang(lang) {
             }, 6000)
         }
     } else if (lang !== "en") {
-        if (window.location.pathname == "/preload.html" || window.location.pathname !== "/preload" ) {
+        if (window.location.pathname == "/preload.html" || window.location.pathname == "/preload" ) {
             if (window.location.pathname !== "/index.html" || window.location.pathname !== "/") {
                 window.location.href = "../index.html";
             }
         }
-        if(text) { setSpecialText();}
     }
     if (lang == "ee") {
         console.log(langArr[lang]['lang']);
