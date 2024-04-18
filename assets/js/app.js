@@ -70,8 +70,8 @@ async function setLang(lang) {
     }
     if (lang == "en") {
         console.log(langArr[lang]['lang']);
-        if (window.localStorage.getItem("lang", lang) !== "en" ) {
-            window.location.assign("/preload.html")
+        if (window.location.pathname !== "/preload.html" || window.location.pathname !== "/preload") {
+            window.location.href = "../preload.html";
         } else {
             console.log('Hey, are you alright?')
         }
