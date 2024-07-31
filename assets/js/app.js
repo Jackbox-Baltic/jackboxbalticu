@@ -1,9 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const version = "1713446499";
+    const version = "1722424173";
     console.log("Version: " + version);
     console.log('URL: ' + window.location.pathname)
     setLang();
     if(text) { setSpecialText();}
+    checkWindowSize();
+    window.addEventListener('resize', checkWindowSize);
 
     const targetIds = ["jbu", "games", "faq"];
 
@@ -28,6 +30,52 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+/**
+ * 
+ */
+let menudrop = false;
+function checkWindowSize() {
+    const divToRemove = document.querySelector('.lih');
+    const menuclick = document.getElementById('menu');
+    if (window.innerWidth <= 500) {
+      if (divToRemove) {
+        divToRemove.style.display = 'none';
+        menuclick.style.display = 'flex'
+        var menuContent = document.querySelector('.lih')
+        if(menuclick) {
+            menuclick.addEventListener('click', function() {
+            if (!menudrop) {
+                menuContent.style.display = 'flex';
+                document.querySelector('header .hh').style.flexDirection = 'column';
+                document.querySelector('.logo').style.width = '20vw';
+                menudrop = true;
+            } else {
+                menuContent.style.display = 'none';
+                document.querySelector('header .hh').style.flexDirection = 'row';
+                document.querySelector('.logo').style.width = 'var(--f3)';
+                menudrop = false;
+            }
+            });
+            document.addEventListener('click', function(event) {
+                var targetElement = event.target;
+                var lbtnElement = document.getElementById('menu');
+                
+                if (targetElement !== lbtnElement && menudrop === true && !targetElement.id.includes('lbtn')) {
+                    menuContent.style.display = 'none';
+                    document.querySelector('header .hh').style.flexDirection = 'row';
+                    document.querySelector('.logo').style.width = 'var(--f3)';
+                    menudrop = false;
+                }
+            });
+        }
+      }
+    } else {
+      if (divToRemove) {
+        divToRemove.style.display = 'flex';
+        menuclick.style.display = 'none'
+      }
+    }
+}
 
 /**
  * 
@@ -45,6 +93,7 @@ async function loadJSON(url) {
     }
 }
 
+const text = document.getElementById('random-text');
 const secsorry = document.getElementById("sorry");
 const seclv = document.getElementById("gameslv");
 var s1imgE = document.getElementById("s1img");
@@ -155,6 +204,7 @@ async function setLang(lang) {
             seclv.style.display = "none";
         }
     }
+    setSpecialText();
 }
 var lang = (window.hasOwnProperty("localStorage") && window.localStorage.getItem("lang", lang)) || "en";
 setLang(lang);
@@ -171,7 +221,7 @@ langAEL.forEach((lang) => {
 
 // LANGUAGE DROP-SELECTION
 let clickdrop = false;
-var dropdownContent = document.querySelector('.dropdown-content');
+var dropdownContent = document.querySelector('.dropdown-content')
 if(document.getElementById('lbtn')) {
     document.getElementById('lbtn').addEventListener('click', function() {
       if (!clickdrop) {
@@ -186,11 +236,11 @@ if(document.getElementById('lbtn')) {
         var targetElement = event.target;
         var lbtnElement = document.getElementById('lbtn');
         
-        if (targetElement !== lbtnElement) {
+        if (targetElement !== lbtnElement && clickdrop === true) {
           dropdownContent.style.display = 'none';
           clickdrop = false;
         }
-      });
+    });
 }
 
 // FAQ
@@ -318,7 +368,6 @@ if(carousel){
 }
 
 // BINJPIPE
-const text = document.getElementById('random-text');
 function setSpecialText() {
     var lang = window.localStorage.getItem("lang", lang);
     let specialTexts = {
@@ -342,16 +391,16 @@ function setSpecialText() {
 
     let texts = {
         lt: [
-            "Sveiki atvykę į puslapį!",
+            "Jackbox Baltic United",
             "iniciatyvinė komanda"
         ],
         ee: [
-            "Tere tulemast kodulehele!",
+            "Jackbox Baltic United",
             "algatusrühm"
         ],
         lv: [
-            "Laipni lūgti mājāslapā!",
-            "iniciatīva komanda"
+            "Jackbox Baltic United",
+            "iniciatīvas komanda"
         ]
     };
 

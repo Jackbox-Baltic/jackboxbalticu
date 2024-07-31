@@ -1,3 +1,7 @@
+.image:hover {
+  transform: scale(1.05);
+}
+
 .image.tjpp {
   background-image: url("../img/tjpps/PP1_tile.jpg")
 }
@@ -5,11 +9,21 @@
   background-image: url("../img/tjpps/PP2_tile.jpg")
 }
 .image.tjpp3 {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%) center center / cover no-repeat, url("../img/tjpps/PP3_tile.jpg");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%) center center / cover no-repeat, url(https://cms-assets.jackboxgames.com/pp3_splash_big_725f31bae2.jpg?format=auto);
+  &:hover {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%) center center / cover no-repeat, url(https://cms-assets.jackboxgames.com/pp3_splash_big_725f31bae2.jpg?format=auto);
+  }
 }
-.image.tjpp3:hover {
-  background-image: url("../img/tjpps/PP3_tile.jpg")
+.logoss.tjpp3 {
+  background-image: url(https://s3.amazonaws.com/cms-assets.jackboxgames.com/pp3_wordmark_6d6959599f.png?format=auto);
+  &:hover {
+    background-image: url('../img/zjD7HO5w.png');
+  }
 }
+.logoss.tjps {
+  background-image: url(https://cms-assets.jackboxgames.com/tjps_wordmark_46bbbb7c76.png?format=auto);
+}
+
 .image.tjpp4 {
   background-image: url("../img/tjpps/PP4_tile.jpg")
 }
@@ -26,10 +40,10 @@
   background-image: url("../img/tjpps/PP8_Nintendo_FirstLook-1Artboard-1.jpg")
 }
 .image.tjps {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%) center center / cover no-repeat, url("../img/tjpps/JBPS_635x291px.jpg");
-}
-.image.tjps:hover {
-  background-image: url("../img/tjpps/JBPS_635x291px.jpg")
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%) center center / cover no-repeat, url(https://cms-assets.jackboxgames.com/tjps_splash_7380812fff.png?format=auto);
+  &:hover {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%) center center / cover no-repeat, url(https://cms-assets.jackboxgames.com/tjps_splash_7380812fff.png?format=auto);
+  }
 }
 .image.tjpp9 {
   background-image: url("../img/tjpps/pp9temptile.jpg")

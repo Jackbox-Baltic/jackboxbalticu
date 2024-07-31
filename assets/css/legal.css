@@ -1,5 +1,5 @@
 .tf {
-    margin-top: 4.25dvw;
+    margin-top: var(--up);
     margin-bottom: 2dvw;
 }
 
@@ -38,7 +38,7 @@ div {
         background-size: cover;
         animation: spa 1s ease-in-out;
         border-radius: var(--f0d5);
-        height: 40dvw;
+        height: var(--hs);
     }
 
     & h1 {
@@ -58,6 +58,17 @@ div {
         }
         & p {
             width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    div {
+        &.tt {
+            flex-direction: column;
+            & div {
+                width: 95%;
+            }
         }
     }
 }

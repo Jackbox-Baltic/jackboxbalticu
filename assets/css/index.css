@@ -11,10 +11,10 @@ section {
 }
 
 .tf {
-    margin-top: 4.35dvw;
+    margin-top: var(--up);
 }
 .ft {
-    font-size: 3dvw;
+    font-size: var(--f3);
     line-height: 1;
     margin: var(--f1);
     animation: spa 1s ease-in-out;
@@ -31,12 +31,12 @@ section #secc {
     background-image: url("../img/bg.jpg");
     animation: spa 1s ease-in-out;
     border-radius: var(--f0d5);
-    height: 40dvw;
+    height: var(--hs);
 
     & p {
         width: 75%;
         text-align: center;
-        font-size: 2.5dvw;
+        font-size: var(--f2d5);
         animation: spa 1s ease-in-out;
         text-shadow: #30c 0 0 1dvw;
     }
@@ -55,17 +55,17 @@ section #secc {
         font-size: var(--f0);
         opacity: 0;
         animation: spa 1s 1s ease-in-out forwards;
+        transform: translateY(var(--bbau)) scale(1);
 
         & a {
             padding: var(--f0d5);
-            transform: translateY(15dvw) scale(1);
 
             & img {
-                width: 4dvw;
+                width: var(--f4s);
             }
 
             &:hover {
-                transform: translateY(15dvw) scale(1.1);
+                transform: scale(1.1);
             }
         }
     }
@@ -93,7 +93,7 @@ section #secc {
     align-items: center;
 
     & img {
-        width: 30dvw;
+        width: var(--f30);
     }
     & p {
         width: 50%;
@@ -161,4 +161,45 @@ section #secc {
 
 .afaq p {
     font-size: var(--f0);
+}
+
+.qfaq {
+    margin-right: 3dvw;
+}
+
+@media screen and (max-width: 1200px) {
+    .hoz {
+        flex-direction: column;
+        & p {
+            width: 75%;
+        }
+    }
+}
+@media screen and (max-width: 700px) {
+    section #secc {
+        & p {
+            width: 80%;
+        }
+    }
+}
+@media screen and (max-width: 500px) {
+    .hoz {
+        flex-direction: column;
+        & p {
+            width: 95%;
+        }
+    }
+    section #secc {
+        & p {
+            width: 95%;
+        }
+    }
+}
+@media (height: 600px) and (width: 1024px) {
+    .hoz {
+        flex-direction: row;
+        & p {
+            width: 50%;
+        }
+    }
 }

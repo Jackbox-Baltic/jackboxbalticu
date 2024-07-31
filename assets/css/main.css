@@ -27,9 +27,22 @@
     --f0: 1.5dvw;
     --f1: 1dvw;
     --f0d5: 0.5dvw;
+    --f0d5m: -0.5dvw;
     --f2: 2dvw;
+    --f2d5: 2.5dvw;
     --f3: 3dvw;
     --f4: 4dvw;
+    --f4s: 4dvw;
+    --up: 4.35dvw;
+    --gup: 6.25dvw;
+    --hs: 40dvw;
+    --bbau: 15dvw;
+    --dc: 5.25dvw;
+    --f30: 30dvw;
+
+    --gcw: 46dvw;
+    --gch: 20dvw;
+    --i16: 16dvw;
 }
 
 body {
@@ -82,7 +95,7 @@ strong {
 }
 
 .logo {
-    width: 3dvw;
+    width: var(--f3);
 }
 
 header {
@@ -127,7 +140,7 @@ header {
 .dropdown-content {
     display: none;
     position: absolute;
-    top: 5.25dvw;
+    top: var(--dc);
     right: 0;
     padding: 0;
     background-color: #11111155;
@@ -196,7 +209,7 @@ footer {
 .ton2b {
     display: block;
     position: fixed;
-    bottom: -0.5dvw;
+    bottom: var(--f0d5m);
     height: var(--f0d5);
     width: 100%;
     background-color: var(--c0);
@@ -204,4 +217,257 @@ footer {
     filter: blur(0.3vh);
     z-index: 3;
     content: '　';
+}
+
+.lih {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1600px) {
+    :root {
+        --f0: 1.75dvw;
+        --f1: 1.25dvw;
+        --f0d5: 0.75dvw;
+        --f2: 2.25dvw;
+        --f2d5: 2.75dvw;
+        --f3: 3.25dvw;
+        --f4: 4.25dvw;
+        --f4s: 4.25dvw;
+        --up: 5.45dvw;
+        --hs: 45dvw;
+        --bbau: 17.5dvw;
+        --dc: 6.25dvw;
+    }
+}
+@media screen and (max-width: 1400px) {
+    :root {
+        --f0: 2dvw;
+        --f1: 1.5dvw;
+        --f0d5: 1dvw;
+        --f2: 2.5dvw;
+        --f2d5: 3dvw;
+        --f3: 3.5dvw;
+        --f4: 4.5dvw;
+        --f4s: 4.5dvw;
+        --up: 6.65dvw;
+        --hs: 50dvw;
+        --bbau: 20dvw;
+        --dc: 7.5dvw;
+
+        --gup: 7.5dvw;
+    }
+}
+@media screen and (max-width: 1200px) {
+    :root {
+        --f0: 2.25dvw;
+        --f1: 1.75dvw;
+        --f0d5: 1.25dvw;
+        --f2: 2.75dvw;
+        --f2d5: 3.25dvw;
+        --f3: 3.75dvw;
+        --f4: 4.75dvw;
+        --f4s: 4.75dvw;
+        --up: 8.05dvw;
+        --hs: 55dvw;
+        --bbau: 22.5dvw;
+        --dc: 9dvw;
+        --f30: 35dvw;
+
+        --gcw: 56dvw;
+        --gch: 30dvw;
+        --gup: 9dvw;
+        --i16: 18dvw;
+    }
+}
+@media screen and (max-width: 1100px) {
+    :root {
+        --f0: 2.5dvw;
+        --f1: 2dvw;
+        --f0d5: 1.5dvw;
+        --f2: 3dvw;
+        --f2d5: 3.5dvw;
+        --f3: 4dvw;
+        --f4: 5dvw;
+        --f4s: 5.25dvw;
+        --up: 9.45dvw;
+        --gup: 10.5dvw;
+        --hs: 60dvw;
+        --bbau: 25dvw;
+        --dc: 10.25dvw;
+    }
+    footer {
+        flex-direction: column;
+        & p.left {
+            width: 75%;
+            margin: var(--f0d5);
+        }
+    }
+}
+@media screen and (max-width: 1000px) {
+    :root {
+        --f0: 2.75dvw;
+        --f1: 2.25dvw;
+        --f0d5: 1.75dvw;
+        --f2: 3.25dvw;
+        --f2d5: 3.75dvw;
+        --f3: 4.25dvw;
+        --f4: 5.25dvw;
+        --f4s: 5.75dvw;
+        --up: 11dvw;
+        --hs: 65dvw;
+        --bbau: 26dvw;
+        --dc: 12dvw;
+        --f30: 40dvw;
+
+        --gcw: 61dvw;
+        --gch: 35dvw;
+        --gup: 12dvw;
+        --i16: 20dvw;
+    }
+}
+@media screen and (max-width: 900px) {
+    :root {
+        --f0: 3dvw;
+        --f1: 2.5dvw;
+        --f0d5: 2dvw;
+        --f2: 3.5dvw;
+        --f2d5: 4dvw;
+        --f3: 4.5dvw;
+        --f4: 5.5dvw;
+        --f4s: 6.75dvw;
+        --up: 14dvw;
+        --hs: 80dvw;
+        --bbau: 32.5dvw;
+        --dc: 15dvw;
+        --f30: 42.5dvw;
+
+        --gcw: 72dvw;
+        --gch: 40dvw;
+        --gup: 16dvw;
+        --i16: 22dvw;
+    }
+}
+@media screen and (max-width: 800px) {
+    :root {
+        --f0: 3.25dvw;
+        --f1: 2.75dvw;
+        --f0d5: 2.25dvw;
+        --f2: 3.75dvw;
+        --f2d5: 4.25dvw;
+        --f3: 4.75dvw;
+        --f4: 5.75dvw;
+        --f4s: 7.5dvw;
+        --up: 16dvw;
+        --hs: 90dvw;
+        --bbau: 35.5dvw;
+        --dc: 17dvw;
+
+        --gcw: 78dvw;
+        --gch: 46dvw;
+        --gup: 17dvw;
+        --i16: 24dvw;
+    }
+}
+@media screen and (max-width: 700px) {
+    :root {
+        --f0: 3.5dvw;
+        --f1: 3dvw;
+        --f0d5: 2.5dvw;
+        --f2: 4dvw;
+        --f2d5: 4.5dvw;
+        --f3: 5dvw;
+        --f4: 6dvw;
+        --f4s: 7.75dvw;
+        --up: 17dvw;
+        --hs: 100dvw;
+        --bbau: 40dvw;
+        --dc: 18dvw;
+        --f30: 46dvw;
+
+        --gcw: 80dvw;
+        --gch: 46dvw;
+        --gup: 19dvw;
+        --i16: 24dvw;
+    }
+}
+@media screen and (max-width: 600px) {
+    :root {
+        --f0: 3.75dvw;
+        --f1: 3.25dvw;
+        --f0d5: 2.75dvw;
+        --f2: 4.25dvw;
+        --f2d5: 4.75dvw;
+        --f3: 5.25dvw;
+        --f4: 6.25dvw;
+        --f4s: 8dvw;
+        --up: 19dvw;
+        --gup: 21dvw;
+        --hs: 105dvw;
+        --bbau: 42.5dvw;
+        --dc: 20dvw;
+        --f30: 48dvw;
+    }
+}
+@media screen and (max-width: 500px) {
+    :root {
+        --f0: 4dvw;
+        --f1: 3.5dvw;
+        --f0d5: 3dvw;
+        --f2: 4.5dvw;
+        --f2d5: 5dvw;
+        --f3: 5.5dvw;
+        --f4: 6.5dvw;
+        --f4s: 9dvw;
+        --up: 21dvw;
+        --gup: 22dvw;
+        --hs: 105dvw;
+        --bbau: 40.5dvw;
+        --dc: 48dvw;
+        --f30: 49dvw;
+    }
+    .lih {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-start;
+    }
+}
+@media screen and (max-width: 400px) {
+    :root {
+        --f0: 4.5dvw;
+        --f1: 4dvw;
+        --f0d5: 3.5dvw;
+        --f2: 5dvw;
+        --f2d5: 5.5dvw;
+        --f3: 6dvw;
+        --f4s: 10dvw;
+        --up: 24dvw;
+        --gup: 26dvw;
+        --hs: 120dvw;
+        --bbau: 47.5dvw;
+        --dc: 48dvw;
+        --f30: 55dvw;
+    }
+}
+@media (height: 600px) and (max-width: 1024px) {
+    :root {
+        --f0: 1.75dvw;
+        --f1: 1.25dvw;
+        --f0d5: 0.75dvw;
+        --f2: 2.25dvw;
+        --f2d5: 2.75dvw;
+        --f3: 3.25dvw;
+        --f4: 4.25dvw;
+        --f4s: 4.75dvw;
+        --up: 6dvw;
+        --hs: 45dvw;
+        --bbau: 17.5dvw;
+        --dc: 12dvw;
+        --f30: 30dvw;
+    }
 }
